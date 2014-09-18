@@ -32,7 +32,7 @@
           </execution>
         </executions>
         <configuration>
-          <mainClass>edu.lmu.cmsi.gabriel.geometryapi.CartesianPlane</mainClass>
+          <mainClass>edu.lmu.cmsi.gabriel.geometryapi.App</mainClass>
         </configuration>
       </plugin>
     </plugins>

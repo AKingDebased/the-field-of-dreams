@@ -1,8 +1,8 @@
-package edu.lmu.cmsi.gabriel.geometryapi.twodpoint;
+package edu.lmu.cmsi.gabriel.geometryapi.cartesianplane.twodpoint;
 
-public class TwoDPoint{
-	private double x;
-	private double y;
+final public class TwoDPoint{
+	final private double x;
+	final private double y;
 
 	public TwoDPoint(double x, double y){
 		if(!validInput(x,y)){
@@ -21,7 +21,7 @@ public class TwoDPoint{
 		return this.y;
 	}
 
-	public boolean validInput(double x, double y){ //public for testing
+	private boolean validInput(double x, double y){ //public for testing
 		return x > 0 && y > 0; //is it okay to be this terse? 
 	}
 }
