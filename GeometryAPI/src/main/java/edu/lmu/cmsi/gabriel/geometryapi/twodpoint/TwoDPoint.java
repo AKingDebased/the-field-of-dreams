@@ -13,7 +13,15 @@ public class TwoDPoint{
 		this.y = y;
 	}
 
-	private boolean validInput(double x, double y){
+	public double getX(){
+		return this.x;
+	}
+
+	public double getY(){
+		return this.y;
+	}
+
+	public boolean validInput(double x, double y){ //public for testing
 		return x > 0 && y > 0; //is it okay to be this terse? 
 	}
 }
