@@ -34,10 +34,3 @@ public class CartesianPlane{
 	}
 }
 
-/*TwoDPoint pointA = new TwoDPoint(1,1);
-		TwoDPoint pointB = new TwoDPoint(2,2);
-
-		System.out.println("god?  are you there? it's me again");
-		System.out.println(distanceBetweenPoints(pointA, pointB));
-		System.out.print(Math.round(1.4142));
-		*/
