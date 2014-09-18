@@ -1,6 +1,6 @@
 package edu.lmu.cmsi.gabriel.geometryapi.cartesianplane;
 
-import edu.lmu.cmsi.gabriel.geometryapi.cartesianplane.twodpoint.TwoDPoint;
+import edu.lmu.cmsi.gabriel.geometryapi.cartesianplane.shape.linesegment.twodpoint.TwoDPoint;
 import java.util.ArrayList;
 import java.util.Scanner;
 

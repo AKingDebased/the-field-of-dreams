@@ -1,3 +1,4 @@
+edu/lmu/cmsi/gabriel/geometryapi/cartesianplane/shape/linesegment/LineSegment.class
 edu/lmu/cmsi/gabriel/geometryapi/cartesianplane/CartesianPlane.class
-edu/lmu/cmsi/gabriel/geometryapi/cartesianplane/twodpoint/TwoDPoint.class
 edu/lmu/cmsi/gabriel/geometryapi/App.class
+edu/lmu/cmsi/gabriel/geometryapi/cartesianplane/shape/linesegment/twodpoint/TwoDPoint.class
