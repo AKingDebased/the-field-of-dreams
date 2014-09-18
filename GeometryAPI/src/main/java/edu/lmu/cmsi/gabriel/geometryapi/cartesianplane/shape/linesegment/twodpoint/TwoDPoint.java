@@ -21,7 +21,15 @@ final public class TwoDPoint{
 		return this.y;
 	}
 
-	private boolean validInput(double x, double y){ //public for testing
+	public double distanceToPoint(TwoDPoint point){
+		return Math.sqrt(Math.pow(this.x - point.getX(),2) + Math.pow(this.y - point.getY(),2)); //distance formula
+	}
+
+	public boolean equalToPoint(TwoDPoint point){
+		return this.x == point.getX() && this.y == point.getY();
+	}
+
+	private boolean validInput(double x, double y){ 
 		return x > 0 && y > 0; //is it okay to be this terse? 
 	}
 }

@@ -1,6 +1,7 @@
 package edu.lmu.cmsi.gabriel.geometryapi.cartesianplane;
 
 import edu.lmu.cmsi.gabriel.geometryapi.cartesianplane.shape.linesegment.twodpoint.TwoDPoint;
+import edu.lmu.cmsi.gabriel.geometryapi.cartesianplane.shape.linesegment.LineSegment;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -24,8 +25,12 @@ public class CartesianPlane{
 		individualPoints.add(newPoint);
 	}
 
-	public double distanceBetweenPoints(TwoDPoint a, TwoDPoint b){
-		return Math.sqrt(Math.pow(a.getX() - b.getX(),2) + Math.pow(a.getY() - b.getY(),2)); //distance formula
+	public void createLineSeg(double x, double y){
+		//working on it
+	}
+
+	public void createShape(double x, double y){
+		//working on it
 	}
 }
 
