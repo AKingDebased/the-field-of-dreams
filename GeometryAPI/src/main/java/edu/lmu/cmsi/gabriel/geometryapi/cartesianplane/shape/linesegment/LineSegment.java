@@ -13,6 +13,7 @@ public class LineSegment{
 		this.pointB = pointB;
 
 		calculateMidpoint();
+		calculateLength();
 	}
 
 	public TwoDPoint getMidpoint(){
@@ -36,6 +37,10 @@ public class LineSegment{
 		double midpointY = (pointA.getY() + pointB.getY()) / 2;
 
 		this.midpoint = new TwoDPoint(midpointX, midpointY);
+	}
+
+	private void calculateLength(){
+
 	}
 
 }
