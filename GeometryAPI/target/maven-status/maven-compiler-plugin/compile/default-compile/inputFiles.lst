@@ -1,4 +1,8 @@
-/Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/GeometryAPI/src/main/java/edu/lmu/cmsi/gabriel/geometryapi/cartesianplane/shape/linesegment/LineSegment.java
-/Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/GeometryAPI/src/main/java/edu/lmu/cmsi/gabriel/geometryapi/cartesianplane/shape/linesegment/twodpoint/TwoDPoint.java
+/Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/GeometryAPI/src/main/java/edu/lmu/cmsi/gabriel/geometryapi/linesegment/twodpoint/TwoDPoint.java
+/Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/GeometryAPI/src/main/java/edu/lmu/cmsi/gabriel/geometryapi/shape/circle/Circle.java
+/Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/GeometryAPI/src/main/java/edu/lmu/cmsi/gabriel/geometryapi/shape/right triangle/RightTriangle.java
+/Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/GeometryAPI/src/main/java/edu/lmu/cmsi/gabriel/geometryapi/shape/rectangle/square/Square.java
 /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/GeometryAPI/src/main/java/edu/lmu/cmsi/gabriel/geometryapi/App.java
-/Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/GeometryAPI/src/main/java/edu/lmu/cmsi/gabriel/geometryapi/cartesianplane/CartesianPlane.java
+/Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/GeometryAPI/src/main/java/edu/lmu/cmsi/gabriel/geometryapi/linesegment/LineSegment.java
+/Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/GeometryAPI/src/main/java/edu/lmu/cmsi/gabriel/geometryapi/shape/rectangle/Rectangle.java
+/Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/GeometryAPI/src/main/java/edu/lmu/cmsi/gabriel/geometryapi/shape/Shape.java

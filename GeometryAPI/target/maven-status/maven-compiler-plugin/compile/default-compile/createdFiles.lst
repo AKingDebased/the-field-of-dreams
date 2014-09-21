@@ -1,8 +1,8 @@
-edu/lmu/cmsi/gabriel/geometryapi/cartesianplane/shape/Shape.class
-edu/lmu/cmsi/gabriel/geometryapi/cartesianplane/shape/linesegment/twodpoint/TwoDPoint.class
-RightTriangle.class
-edu/lmu/cmsi/gabriel/geometryapi/cartesianplane/shape/rectangle/Rectangle.class
-edu/lmu/cmsi/gabriel/geometryapi/cartesianplane/shape/linesegment/LineSegment.class
-edu/lmu/cmsi/gabriel/geometryapi/cartesianplane/CartesianPlane.class
+edu/lmu/cmsi/gabriel/geometryapi/linesegment/twodpoint/TwoDPoint.class
+edu/lmu/cmsi/gabriel/geometryapi/shape/Shape.class
 Circle.class
 edu/lmu/cmsi/gabriel/geometryapi/App.class
+edu/lmu/cmsi/gabriel/geometryapi/linesegment/LineSegment.class
+RightTriangle.class
+Square.class
+edu/lmu/cmsi/gabriel/geometryapi/shape/rectangle/Rectangle.class

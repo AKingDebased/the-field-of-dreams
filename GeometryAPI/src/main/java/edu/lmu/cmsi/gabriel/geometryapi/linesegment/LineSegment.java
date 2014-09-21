@@ -1,6 +1,6 @@
-package edu.lmu.cmsi.gabriel.geometryapi.cartesianplane.shape.linesegment;
+package edu.lmu.cmsi.gabriel.geometryapi.linesegment;
 
-import edu.lmu.cmsi.gabriel.geometryapi.cartesianplane.shape.linesegment.twodpoint.TwoDPoint;
+import edu.lmu.cmsi.gabriel.geometryapi.linesegment.twodpoint.TwoDPoint;
 
 public class LineSegment{
 	private double length;

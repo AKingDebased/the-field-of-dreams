@@ -1,7 +1,7 @@
-package edu.lmu.cmsi.gabriel.geometryapi.cartesianplane.shape.rectangle;
+package edu.lmu.cmsi.gabriel.geometryapi.shape.rectangle;
 
-import edu.lmu.cmsi.gabriel.geometryapi.cartesianplane.shape.Shape;
-import edu.lmu.cmsi.gabriel.geometryapi.cartesianplane.shape.linesegment.twodpoint.TwoDPoint; 
+import edu.lmu.cmsi.gabriel.geometryapi.shape.Shape;
+import edu.lmu.cmsi.gabriel.geometryapi.linesegment.twodpoint.TwoDPoint; 
 
 public class Rectangle{
 	private double height;
@@ -19,7 +19,6 @@ public class Rectangle{
 		this.origin = newOrigin;
 	}
 
-	
 	public boolean containsPoint(TwoDPoint point){
 		return point.getX() <= this.width && point.getY() <= this.height;
 	}

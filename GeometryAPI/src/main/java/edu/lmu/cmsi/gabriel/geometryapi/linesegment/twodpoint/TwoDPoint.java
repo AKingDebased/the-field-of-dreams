@@ -1,4 +1,4 @@
-package edu.lmu.cmsi.gabriel.geometryapi.cartesianplane.shape.linesegment.twodpoint;
+package edu.lmu.cmsi.gabriel.geometryapi.linesegment.twodpoint;
 
 final public class TwoDPoint{
 	final private double x;

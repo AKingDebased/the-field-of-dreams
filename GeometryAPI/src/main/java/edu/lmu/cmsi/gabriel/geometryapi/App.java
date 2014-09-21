@@ -1,28 +1,36 @@
 package edu.lmu.cmsi.gabriel.geometryapi;
 
-import edu.lmu.cmsi.gabriel.geometryapi.cartesianplane.CartesianPlane;
 import java.util.ArrayList;
 import java.util.Scanner;
-
-//testing packages
-import edu.lmu.cmsi.gabriel.geometryapi.cartesianplane.shape.linesegment.twodpoint.TwoDPoint;
-import edu.lmu.cmsi.gabriel.geometryapi.cartesianplane.shape.linesegment.LineSegment;
+import edu.lmu.cmsi.gabriel.geometryapi.linesegment.twodpoint.TwoDPoint;
+import edu.lmu.cmsi.gabriel.geometryapi.linesegment.LineSegment;
+import edu.lmu.cmsi.gabriel.geometryapi.shape.rectangle.Rectangle;
+//import edu.lmu.cmsi.gabriel.geometryapi.shape.rectangle.square.Square;
+//import edu.lmu.cmsi.gabriel.geometryapi.shape.circle.Circle;
+//import edu.lmu.cmsi.gabriel.geometryapi.shape.righttriangle.RightTriangle;
 
 public class App{
-	static ArrayList<CartesianPlane> planes = new ArrayList<CartesianPlane>();
+	//arraylists to hold plane elements
+	static ArrayList<TwoDPoint> individualPoints = new ArrayList<TwoDPoint>();
+	static ArrayList<LineSegment> individualLineSegments = new ArrayList<LineSegment>();
+	static ArrayList<Rectangle> rectangles = new ArrayList<Rectangle>();
+	//static ArrayList<Square> squares = new ArrayList<Square>();
+	//static ArrayList<RightTriangle> rightTriangles = new ArrayList<RightTriangle>();
+	//static ArrayList<Circle> circles = new ArrayList<Circle>();
 	static Scanner userInput = new Scanner(System.in);
 	static boolean isRunning = true;
 
 	
 	public static void main(String[]args){
-		testing();
-		/*System.out.println("welcome to the text based cartesian coordinate grid.  type 'exit' at anytime to do just that.");
+		System.out.println("welcome to the text based cartesian coordinate grid."
+			+ " type 'exit' at anytime to do just that.");
 
 		while(isRunning){
 			System.out.println("\nwhat would you like to do?");
-			System.out.println("\na)create a new grid\nb)delete an existing grid\nc)create a new point " + 
-				"\nd)create a new line segment\ne)create a new shape\n");
-			System.out.println("for additional behavior for specific plane members, enter one of the following:");
+			System.out.println("\na)create a new point " + "\nb)create a new line segment" + 
+				"\nc)create a new shape\n");
+			System.out.println("for additional behavior for specific plane members," +
+			 	" enter one of the following:");
 			System.out.println("point\nline segment\nshape");
 
 
@@ -35,30 +43,36 @@ public class App{
 			}
 
 			if(userSelection.equalsIgnoreCase("a")){
-				createPlane(); 
-			}*/
+				double x;
+				double y;
+
+				System.out.print("where would you like the point?\nx: ");
+				x = userInput.nextDouble();
+				System.out.print("y: ");
+				y = userInput.nextDouble();
+
+				createPoint(x,y);
+
+				TwoDPoint createdPoint = individualPoints.get(individualPoints.size() - 1);
+				System.out.println("you've created a point at (" + createdPoint.getX() + ", " + 
+					createdPoint.getY() + ")" );
+					 
+			}
+		}
 	}	
 
-	private static void testing(){
+	public static void createPoint(double x, double y){
+		TwoDPoint newPoint = new TwoDPoint(x,y);
 
-		//midpoint test
-		TwoDPoint a = new TwoDPoint(4,1);
-		TwoDPoint b = new TwoDPoint(5,2);
-		TwoDPoint c = new TwoDPoint(7,4);
-		TwoDPoint d = new TwoDPoint(8,5);
-		LineSegment lineSeg = new LineSegment(a,b);
-		LineSegment lineSeg2 = new LineSegment(c,d);
-		
-		System.out.println("midpoint between (1,1) and (2,2) is " + "(" + lineSeg.getMidpoint().getX() +
-			", " + lineSeg.getMidpoint().getY() + ")");
-		
-		//line segment equality testing
-		System.out.print("are the two line segments equal in length? " + lineSeg.equalToLineSeg(lineSeg2));
-
+		individualPoints.add(newPoint);
 	}
 
-	private static void createPlane(){
-		CartesianPlane newPlane = new CartesianPlane();
-		planes.add(newPlane);
+	public static void createLineSeg(TwoDPoint a, TwoDPoint b){
+		//working on it
 	}
+
+	public static void createRectangle(double width, double height, TwoDPoint origin){
+		//working on it
+	}
+
 }

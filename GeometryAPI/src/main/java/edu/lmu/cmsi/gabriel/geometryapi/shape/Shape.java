@@ -1,5 +1,5 @@
-package edu.lmu.cmsi.gabriel.geometryapi.cartesianplane.shape;
-import edu.lmu.cmsi.gabriel.geometryapi.cartesianplane.shape.linesegment.twodpoint.TwoDPoint;
+package edu.lmu.cmsi.gabriel.geometryapi.shape;
+import edu.lmu.cmsi.gabriel.geometryapi.linesegment.twodpoint.TwoDPoint;
 
 public abstract class Shape{ //NOT WORKING PROPERLY FOR SOME REASON??
 
