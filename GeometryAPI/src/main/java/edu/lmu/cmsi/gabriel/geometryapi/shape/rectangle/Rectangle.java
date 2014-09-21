@@ -19,8 +19,8 @@ public class Rectangle{
 		this.origin = newOrigin;
 	}
 
-	public boolean containsPoint(TwoDPoint point){
-		return point.getX() <= this.width && point.getY() <= this.height;
+	public boolean containsPoint(TwoDPoint point){ //I UPDATED IT KATE ARE YOU HAPPY
+		return point.getX() <= origin.getX() + this.width && point.getY() <= origin.getY() + this.height;
 	}
 
 	public double getArea(){
