@@ -28,7 +28,6 @@ Rectangle testRectangle = new Rectangle(1,1,originPoint);
 
 
 * i have a lingering question about variables and getter functions.  let me phrase the question with an example: in my `Rectangle` class, i added a boolean variable that holds whether or not the rectangle is also a square.  as it stands, i have a getter function that returns the variable `isSquare`.  
-
 however, since no other function in the Rectangle class depends upon the `isSquare` variable, could i not just delete the isSquare variable and only keep the isSquare function?  that way, a fellow dev can still determine if a Rectangle is also a square by simply calling the `isSquare()` function, and there's no need to waste memory storing information that is not necessary for the program.
 
 
