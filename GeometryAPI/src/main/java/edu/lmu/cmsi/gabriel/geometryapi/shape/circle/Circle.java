@@ -22,7 +22,7 @@ public class Circle{
 	}
 
 	public boolean containsPoint(TwoDPoint point){ 
-		double xDistance = point.distanceToPoint(this.center);
+		return this.center.distanceToPoint(point) <= this.radius;
 	}
 
 	public double getArea(){
