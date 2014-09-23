@@ -16,7 +16,6 @@
 
 ##### General Notes
 
-
 * i admit it is cumbersome that a point object has to be passed in as the origin before we can make any shapes
 
 ```
@@ -27,8 +26,11 @@ Rectangle testRectangle = new Rectangle(1,1,originPoint);
 * the assignment did not explicitly ask for things like vertex points, so a given shape's position on the coordinate plane is based off of its origin point.  this origin point is a private `TwoDPoint` object variable, which represents the bottom left corner of rectangles & squares, the right angle corner of triangles, and the center of circles.  any translation or point containment functions are keyed off this origin.
 
 
-* i have a lingering question about variables and getter functions.  let me phrase the question with an example: in my `Rectangle` class, i added a boolean variable that holds whether or not the rectangle is also a square.  as it stands, i have a getter function that returns the variable `isSquare`.
-	however, since no other function in the Rectangle class depends upon the `isSquare` variable, could i not just delete the isSquare variable and only keep the isSquare function?  that way, a fellow dev can still determine if a Rectangle is also a square by simply calling the `isSquare()` function, and there's no need to waste memory storing information that is not necessary for the program.
+* i have a lingering question about variables and getter functions.  let me phrase the question with an example: in my `Rectangle` class, i added a boolean variable that holds whether or not the rectangle is also a square.  as it stands, i have a getter function that returns the variable `isSquare`.  however, since no other function in the Rectangle class depends upon the `isSquare` variable, could i not just delete the isSquare variable and only keep the isSquare function?  that way, a fellow dev can still determine if a Rectangle is also a square by simply calling the `isSquare()` function, and there's no need to waste memory storing information that is not necessary for the program.
+
+##### BUT WHY DOES IT ALL WORK
+
+because i ran an uncomfortable amount of unit tests across as many cases as my clumsy human brain could come up with that's why
 
 
 
