@@ -1,10 +1,10 @@
 ### text based cartesian geometry 
 
+##### on comments
+
+* i'm of the opinion that good code should be documentative.  this is a) because i tend to overcomment and b) i'll support any philosophy that meshes with my perennial laziness.  with that said, my intention is that you'll find my code's purpose fairly plain even with the relatively minimal amount of comments.  however, if you think i could use more detailed comments, i am totally amenable to that.
+
 ##### General Notes
-
-######## on comments
-
-* i'm of the opinion that good code should be documentative.  this is a) because i tend to overcomment and b) i'll support any philosophy that meshes with my perennial laziness.  with that said, my intention is that you'll find my code's purpose fairly plain even with the relatively minimal amount of comments.  however, if you think i could use more detailed comments, i am totally amenable to that
 
 * i admit it is cumbersome that a point object has to be passed in as the origin before we can make any shapes, but for time's (read: laziness') sake, that is the current design philosophy
 
