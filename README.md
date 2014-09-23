@@ -2,6 +2,10 @@
 
 ##### General Notes
 
+######## on comments
+
+* i'm of the opinion that good code should be documentative.  this is a) because i tend to overcomment and b) i'll support any philosophy that meshes with my perennial laziness.  with that said, my intention is that you'll find my code's purpose fairly plain even with the relatively minimal amount of comments.  however, if you think i could use more detailed comments, i am totally amenable to that
+
 * i admit it is cumbersome that a point object has to be passed in as the origin before we can make any shapes, but for time's (read: laziness') sake, that is the current design philosophy
 
 ```
@@ -22,6 +26,10 @@ Rectangle testRectangle = new Rectangle(1,1,originPoint);
 
 * for simplicity's sake, the constructor for a line segment requires two previously declared points.  if i had more time (read: was less lazy), i would include functionality for entering coordinate points as parameters and have the `LineSegment` class generate the requisite points.
 
+* missing an `intersectsLineSeg()` method due to unexpectedly high levels of geometry and laziness in code.  sorry about that.
+
+* the `getSlope()` method is a relic of previous iterations of this project.  it was left in for fun and profit.
+
 ##### Rectangle.java
 
 * it should be noted that there is no separate `Square` class.  rather, any rectangle with an equal `width` and `height` variable will set the `isSquare` boolean to true.
@@ -30,6 +38,8 @@ Rectangle testRectangle = new Rectangle(1,1,originPoint);
 ##### RightTriangle.java
 
 * due to time (read: being a lazy son of a bitch), i constructed the `RightTriangle` class such that it only takes in base, width, and an origin point.  all of its associated functions automatically treat the triangle as a right triangle based on that information.  as the program is designed, there is no way to make a non-right triangle.  personally, i think it would be counterintuitive to have a `RightTriangle `class that could produce non-right triangles.
+
+* `RightTriangle` does not have a `containtsPoint()` method.  surprise geometry + crunch time = missing functions.  again, sorry about that.  
 
 ##### Circle.java
 

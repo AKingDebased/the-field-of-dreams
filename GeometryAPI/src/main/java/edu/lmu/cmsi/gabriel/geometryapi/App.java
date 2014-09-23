@@ -1,25 +1,8 @@
 package edu.lmu.cmsi.gabriel.geometryapi;
 
-import edu.lmu.cmsi.gabriel.geometryapi.linesegment.LineSegment;
-import edu.lmu.cmsi.gabriel.geometryapi.linesegment.twodpoint.TwoDPoint;
-import edu.lmu.cmsi.gabriel.geometryapi.shape.circle.Circle;
-
 public class App{
 	public static void main(String[]args){
-		areaTest();
-     
-    }
-
-    public static void areaTest(){
-    	Circle circle1 = constructCircle(10,10,5);
-    	System.out.println(circle1.getArea());
+		System.out.println("hey mike.  i'm not really sure what you wanted to see in this App.class for this specific project, but all my classes are here for your testing pleasure.");
 	}
-
-     private static Circle constructCircle(double originX, double originY, double radius){
-        TwoDPoint originPoint = new TwoDPoint(originX,originY);
-        Circle circle = new Circle(originPoint, radius);
-
-        return circle;
-    }
 }
 

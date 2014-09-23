@@ -10,8 +10,6 @@ public class LineSegment{
 	public LineSegment(TwoDPoint pointA, TwoDPoint pointB){
 		this.pointA = pointA;
 		this.pointB = pointB;
-
-		//calculateSlope();
 	}
 
 	public TwoDPoint getMidpoint(){
@@ -27,16 +25,16 @@ public class LineSegment{
 		return length;
 	}
 
-	/*public double getSlope(){
+	public double getSlope(){
 		double slope = (pointB.getY() - pointA.getY()) / (pointB.getX() - pointA.getX());
 		return slope;
-	}*/
+	}
 
 	public boolean equalToLineSeg(LineSegment lineSegment){
 		return this.getLength() == lineSegment.getLength();
 	}
 
 	/*public boolean intersectsLineSeg(LineSegment lineSegment){
-
+		uuuuuuuuuuhhhhhhhhhhhhhhhhhhhhhhhhhh
 	}*/
 }

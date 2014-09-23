@@ -47,8 +47,6 @@ public class RectangleTest{
         assertEquals("failure - expected false", false, testRectangle2.containsPoint(testPoint));
     }
 
-    publc void 
-
     private Rectangle constructRectangle(double originX, double originY, double width, double height){
         TwoDPoint originPoint = new TwoDPoint(originX,originY);
         Rectangle rectangle = new Rectangle(width,height,originPoint);

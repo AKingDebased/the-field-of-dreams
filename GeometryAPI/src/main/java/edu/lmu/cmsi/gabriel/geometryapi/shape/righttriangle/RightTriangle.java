@@ -22,6 +22,10 @@ public class RightTriangle{
 		return base * height * 0.5;
 	}
 
+	private double getPerimeter(){
+		
+	}
+
 	public Rectangle getBoundingRectangle(){
 		Rectangle boundingRectangle = new Rectangle(this.base, this.height, this.origin);
 
