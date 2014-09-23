@@ -36,6 +36,12 @@ public class Rectangle{
 		return this.origin;
 	}
 
+	public Rectangle getBoundingRectangle(){
+		Rectangle boundingRectangle = new Rectangle(this.height, this.width, this.origin);
+
+		return boundingRectangle; // in the case of rectangles and squares, the bounding rectangle is the exact same width and height
+	}
+
 	public boolean isSquare(){
 		return this.isSquare;
 	}

@@ -15,7 +15,7 @@ public class LineSegment{
 
 		calculateMidpoint();
 		calculateLength();
-		calculateSlope();
+		//calculateSlope();
 	}
 
 	public TwoDPoint getMidpoint(){

@@ -7,7 +7,7 @@ import edu.lmu.cmsi.gabriel.geometryapi.linesegment.LineSegment;
 
 public class LineSegmentTest{
 	
-	@Test
+	/*@Test
     public void slopeTest(){
 
         //slope of (1,4) and (4,2)
@@ -37,5 +37,5 @@ public class LineSegmentTest{
 
         LineSegment testLine4 = new LineSegment(pointA4, pointB4);
         assertEquals(1,testLine4.getSlope(),.1);
-    }
+    }*/
 }
