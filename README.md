@@ -1,20 +1,20 @@
 ### text based cartesian geometry 
 
-### TwoDPoint.java
+##### TwoDPoint.java
 
-### LineSegment.java
+##### LineSegment.java
 
 for simplicity's sake, the constructor for a line segment requires two previously declared points.  if i had more time (read: was less lazy), i would include functionality for entering coordinate points as parameters and have the LineSegment class generate the requisite points.
 
-### Rectangle.java
+##### Rectangle.java
 
-### RightTriangle.java
+##### RightTriangle.java
 
 due to time (read: being a lazy son of a bitch), i constructed the RightTriangle class such that it only takes in base, width, and an origin point.  all of its associated functions automatically treat the triangle as a right triangle based on that information.  as the program is designed, there is no way to make a non-right triangle.  personally, i think it would be counterintuitive to have a RightTriangle class that could produce non-right triangles.
 
-### Circle.java
+##### Circle.java
 
-### General Notes
+##### General Notes
 
 
 it seems cumbersome that we need to create a point to act as the origin before we can make any shapes
