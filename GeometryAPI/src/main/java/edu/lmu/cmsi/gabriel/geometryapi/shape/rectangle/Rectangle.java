@@ -6,13 +6,11 @@ public class Rectangle{
 	private double height;
 	private double width;
 	private TwoDPoint origin;
-	private boolean isSquare;
-
+	
 	public Rectangle(double height, double width, TwoDPoint origin){
 		this.height = height;
 		this.width = width;
 		this.origin = origin;
-		this.isSquare = height == width;
 	}
 
 	public void translate(double x, double y){
@@ -43,7 +41,7 @@ public class Rectangle{
 	}
 
 	public boolean isSquare(){
-		return this.isSquare;
+		return height == width;
 	}
 	
 }

@@ -30,6 +30,6 @@ final public class TwoDPoint{
 	}
 
 	private boolean validInput(double x, double y){ 
-		return x >= 0 && y >= 0; //is it okay to be this terse? 
+		return x >= 0 && y >= 0; 
 	}
 }
