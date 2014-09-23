@@ -3,6 +3,6 @@ edu/lmu/cmsi/gabriel/geometryapi/shape/Shape.class
 Circle.class
 edu/lmu/cmsi/gabriel/geometryapi/App.class
 edu/lmu/cmsi/gabriel/geometryapi/linesegment/LineSegment.class
-RightTriangle.class
 Square.class
 edu/lmu/cmsi/gabriel/geometryapi/shape/rectangle/Rectangle.class
+edu/lmu/cmsi/gabriel/geometryapi/shape/righttriangle/RightTriangle.class

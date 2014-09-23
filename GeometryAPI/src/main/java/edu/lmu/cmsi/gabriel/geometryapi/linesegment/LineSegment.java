@@ -6,7 +6,8 @@ public class LineSegment{
 	private double length;
 	private TwoDPoint pointA;
 	private TwoDPoint pointB; 
-	private TwoDPoint midpoint; //do we need this as a declared variable?
+	private TwoDPoint midpoint; 
+	//private double slope;
 
 	public LineSegment(TwoDPoint pointA, TwoDPoint pointB){
 		this.pointA = pointA;
@@ -14,6 +15,7 @@ public class LineSegment{
 
 		calculateMidpoint();
 		calculateLength();
+		calculateSlope();
 	}
 
 	public TwoDPoint getMidpoint(){
@@ -21,8 +23,12 @@ public class LineSegment{
 	}
 
 	public double getLength(){
-		return pointA.distanceToPoint(pointB);
+		return length;
 	}
+
+	/*public double getSlope(){
+		return this.slope;
+	}*/
 
 	public boolean equalToLineSeg(LineSegment lineSegment){
 		return this.getLength() == lineSegment.getLength();
@@ -40,7 +46,11 @@ public class LineSegment{
 	}
 
 	private void calculateLength(){
-
+		this.length = pointA.distanceToPoint(pointB);
 	}
+
+	/*private void calculateSlope(){
+		this.slope = (pointB.getY() - pointA.getY()) / (pointB.getX() - pointA.getX());
+	}*/
 
 }

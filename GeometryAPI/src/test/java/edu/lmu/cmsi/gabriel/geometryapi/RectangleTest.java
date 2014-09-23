@@ -32,8 +32,6 @@ public class RectangleTest{
         assertEquals("failure - expected (1.0,0.0)","(" + 1.0 + "," + 0.0 + ")",
             "(" + testRectangle3.getOrigin().getX() + "," + 
             testRectangle3.getOrigin().getY() + ")");
-
-       //how do i test for the negative origin coordinate illegal argument exception?
     }
 
     public void containsPointTest(){
