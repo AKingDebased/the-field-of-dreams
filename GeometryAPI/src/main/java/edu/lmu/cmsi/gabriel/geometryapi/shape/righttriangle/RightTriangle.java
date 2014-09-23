@@ -12,23 +12,30 @@ public class RightTriangle{
 		this.origin = origin;
 		this.base = base;
 		this.height = height;
-
-		/*if(!isRightTriangle()){
-			throw new IllegalArgumentException("must be right triangle");
-		}*/
 	}
 
-	private double getArea(){
+	public void translate(double x, double y){
+		TwoDPoint newOrigin = new TwoDPoint(this.origin.getX() + x, this.origin.getY() + y);
+		this.origin = newOrigin;
+	}
+
+	/*public boolean containsPoint(TwoDPoint point){
+		uuuuuuuuuuuuuhhhhhhhhhhh
+	}*/
+
+	public double getArea(){
 		return base * height * 0.5;
 	}
 
-	private double getPerimeter(){
-		
+	public double getPerimeter(){
+		double hypotenuse = Math.pow(base,2) + Math.pow(height,2);
+
+		return Math.sqrt(hypotenuse);
 	}
 
 	public Rectangle getBoundingRectangle(){
 		Rectangle boundingRectangle = new Rectangle(this.base, this.height, this.origin);
 
-		return boundingRectangle; // in the case of rectangles and squares, the bounding rectangle is the exact same width and height
+		return boundingRectangle; 
 	}
 }

@@ -5,8 +5,7 @@ import edu.lmu.cmsi.gabriel.geometryapi.linesegment.twodpoint.TwoDPoint;
 public class LineSegment{
 	private TwoDPoint pointA;
 	private TwoDPoint pointB; 
-	//private double slope;
-
+	
 	public LineSegment(TwoDPoint pointA, TwoDPoint pointB){
 		this.pointA = pointA;
 		this.pointB = pointB;
