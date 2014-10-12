@@ -3,9 +3,11 @@ package edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects;
 public class GameObject{
 
 	private Coordinate location;
+	private char renderedChar;
 
-	public GameObject(int x, int y){
+	public GameObject(int x, int y, char renderedChar){
 		this.location = new Coordinate(x, y);
+		this.renderedChar = renderedChar;
 	}
 
 	public int getX() {
@@ -16,6 +18,8 @@ public class GameObject{
     	return this.location.getY();
   	}
 
-  	public abstract char getRenderedCharacter();
+  	public char getRenderedChar(){
+  		return this.renderedChar;
+  	}
 	
 }

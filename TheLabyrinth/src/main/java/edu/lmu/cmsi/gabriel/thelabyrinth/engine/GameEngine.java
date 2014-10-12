@@ -1,6 +1,6 @@
 package edu.lmu.cmsi.gabriel.thelabyrinth.engine;
 
-import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.Wall;
+import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.GameObject;
 import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.Player;
 import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.Monster;
 
@@ -10,9 +10,9 @@ public class GameEngine {
   private int size;
 
   // Game Objects
-  private Wall[] walls;
-  private Player player;
-  private Monster[] monsters;
+  private GameObjects[] walls;
+  private Character player;
+  private Character[] monsters;
 
   public GameEngine(int size) {
     if (size < 1) {
@@ -25,10 +25,11 @@ public class GameEngine {
     this.createWalls();
 
     this.player = new Player(3, 4);
-    this.monsters = new Monster[3];
-    this.monsters[0] = new Monster(4, 3, 1, 0);
-    this.monsters[1] = new Monster(10, 12, 0, 1);
-    this.monsters[2] = new Monster(8, 17, 1, 1);
+    this.monsters = new Character[3];
+    this.monsters[0] = new Character(4, 3, 1, 0, 'z');
+    this.monsters[1] = new Character(10, 12, 0, 1, 'x');
+    this.monsters[2] = new Character(8, 17, 1, 1, 'a');
+    this.monsters[3] = new Character(1, 1, 0, 0, 's');
   }
 
   private void createWalls() {
@@ -37,19 +38,19 @@ public class GameEngine {
 
     int wallCount = 0;
     // calculate the amount of walls we'll need
-    this.walls = new Wall[this.size * 4 - 4];
+    this.walls = new GameObject[this.size * 4 - 4];
 
     for (int x = 0; x < this.size; x++) {
-      Wall x1 = new Wall(x, 0);
+      GameObject x1 = new GameObject(x, 0, 'w');
       walls[wallCount++] = x1;
-      Wall x2 = new Wall(x, this.size - 1);
+      GameObject x2 = new GameObject(x, this.size - 1,'w');
       walls[wallCount++] = x2;
     }
 
     for (int y = 1; y < size - 1; y++) {
-      Wall y1 = new Wall(0, y);
+      GameObject y1 = new GameObject(0, y,'w');
       walls[wallCount++] = y1;
-      Wall y2 = new Wall(this.size - 1, y);
+      GameObject y2 = new GameObject(this.size - 1, y);
       walls[wallCount++] = y2;
     }
   }
@@ -68,7 +69,7 @@ public class GameEngine {
 
     //walls
     for (int i = 0; i < this.walls.length; i++) {
-      Wall w = this.walls[i];
+      GameObject w = this.walls[i];
       renderedWorld[w.getY()][w.getX()] = Character.toString(w.getRenderedCharacter());
     }
 
@@ -111,11 +112,11 @@ public class GameEngine {
 
   private void checkCollisions() {
     for (int i = 0; i < this.walls.length; i++) {
-      Wall w = this.walls[i];
+      GameObject w = this.walls[i];
       this.player.checkCollision(w);
     }
     for (int i = 0; i < this.walls.length; i++) {
-      Wall w = this.walls[i];
+      GameObject w = this.walls[i];
       for (int j = 0; j < this.monsters.length; j++) {
         this.monsters[j].checkCollision(w);
       }

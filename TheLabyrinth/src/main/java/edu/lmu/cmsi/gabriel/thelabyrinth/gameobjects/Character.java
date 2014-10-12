@@ -6,8 +6,8 @@ public class Character extends GameObject{
 
 	private Displacement displacement;
 
-	public Character(int x, int y, int dx, int dy, char renderedChar){
-		super(x,y);
+	public Character(int x, int y, char renderedChar, int dx, int dy){
+		super(x,y,renderedChar);
 		this.displacement = new Displacement(dx, dy);
 	}
 
@@ -16,7 +16,7 @@ public class Character extends GameObject{
     	this.location.setY(this.location.getY() + this.displacement.getYDisplacement());
  	}
 
- 	public void checkCollision(Wall w) {
+ 	public void checkCollision(Gameobject wall) {
     	if (this.getX() == w.getX() && this.getY() == w.getY()) {
       		displacement.invert();
     	}
