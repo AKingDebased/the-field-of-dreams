@@ -1,6 +1,6 @@
 package edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects;
 
-public abstract class GameObject{
+public class GameObject{
 
 	private Coordinate location;
 
