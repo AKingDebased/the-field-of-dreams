@@ -4,6 +4,10 @@ public abstract class GameObject{
 
 	private Coordinate location;
 
+	public GameObject(int x, int y){
+		this.location = new Coordinate(x, y);
+	}
+
 	public int getX() {
     	return this.location.getX();
  	}
