@@ -2,6 +2,7 @@ package edu.lmu.cmsi.gabriel.thelabyrinth.engine;
 
 import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.GameObject;
 import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.GameCharacter;
+import edu.lmu.cmsi.gabriel.thelabyrinth.core.Types;
 
 public class GameEngine {
 
@@ -23,12 +24,12 @@ public class GameEngine {
     // do this in a separate method to keep the constructor clean
     this.createWalls();
 
-    this.player = new GameCharacter(3, 4, 'p');
+    this.player = new GameCharacter(3, 4, Types.PLAYER);
     this.monsters = new GameCharacter[4];
-    this.monsters[0] = new GameCharacter(4, 3, 1, 0, 'z');
-    this.monsters[1] = new GameCharacter(10, 12, 0, 1, 'x');
-    this.monsters[2] = new GameCharacter(8, 17, 1, 1, 'a');
-    this.monsters[3] = new GameCharacter(1, 1, 0, 0, 's');
+    this.monsters[0] = new GameCharacter(4, 3, 1, 0, Types.MONSTER_Z);
+    this.monsters[1] = new GameCharacter(10, 12, 0, 1, Types.MONSTER_X);
+    this.monsters[2] = new GameCharacter(8, 17, 1, 1, Types.MONSTER_A);
+    this.monsters[3] = new GameCharacter(1, 1, 0, 0, Types.MONSTER_S);
   }
 
   private void createWalls() {
@@ -40,21 +41,21 @@ public class GameEngine {
     this.walls = new GameObject[this.size * 4 - 4];
 
     for (int x = 0; x < this.size; x++) {
-      GameObject x1 = new GameObject(x, 0, 'w');
+      GameObject x1 = new GameObject(x, 0, Types.WALL);
       walls[wallCount++] = x1;
-      GameObject x2 = new GameObject(x, this.size - 1,'w');
+      GameObject x2 = new GameObject(x, this.size - 1,Types.WALL);
       walls[wallCount++] = x2;
     }
 
     for (int y = 1; y < size - 1; y++) {
-      GameObject y1 = new GameObject(0, y,'w');
+      GameObject y1 = new GameObject(0, y,Types.WALL);
       walls[wallCount++] = y1;
-      GameObject y2 = new GameObject(this.size - 1, y,'w');
+      GameObject y2 = new GameObject(this.size - 1, y,Types.WALL);
       walls[wallCount++] = y2;
     }
   }
 
-  // the main upadte loop
+  // the main update loop
   public void update() {
     this.frame++;
     this.render();
@@ -75,7 +76,7 @@ public class GameEngine {
     renderedWorld[this.player.getY()][this.player.getX()] =
         Character.toString(this.player.getRenderedChar());
 
-    // monster
+    // monsters
     for (int i = 0; i < this.monsters.length; i++) {
       GameCharacter m = this.monsters[i];
       renderedWorld[m.getY()][m.getX()] = Character.toString(m.getRenderedChar());
@@ -101,9 +102,10 @@ public class GameEngine {
   }
 
   private void updateObjects() {
-    // everytime we add a new game object, we've got to go back through
-    // every other place and add in more code - such duplication
+    // duplication's gone, baby
+
     this.player.update();
+
     for (int i = 0; i < this.monsters.length; i++) {
       this.monsters[i].update();
     }
@@ -114,6 +116,7 @@ public class GameEngine {
       GameObject w = this.walls[i];
       this.player.checkCollision(w);
     }
+
     for (int i = 0; i < this.walls.length; i++) {
       GameObject w = this.walls[i];
       for (int j = 0; j < this.monsters.length; j++) {

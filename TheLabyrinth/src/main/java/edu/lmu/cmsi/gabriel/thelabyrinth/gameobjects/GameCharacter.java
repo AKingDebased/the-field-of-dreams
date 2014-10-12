@@ -2,20 +2,21 @@ package edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects;
 
 import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.GameObject;
 import edu.lmu.cmsi.gabriel.thelabyrinth.core.Displacement;
+import edu.lmu.cmsi.gabriel.thelabyrinth.core.Types;
 
 public class GameCharacter extends GameObject{
 
 	private Displacement displacement;
 
 	///if no displacement is given, GameCharacter is assumed to be a player
-	public GameCharacter(int x, int y, char renderedChar){ 
-		super(x,y,renderedChar);
+	public GameCharacter(int x, int y, Types type){ 
+		super(x,y,type);
 		this.displacement = new Displacement(1, 0);
 		
 	}
 
-	public GameCharacter(int x, int y, int dx, int dy, char renderedChar){
-		super(x,y,renderedChar);
+	public GameCharacter(int x, int y, int dx, int dy, Types type){
+		super(x,y,type);
 
 		this.displacement = new Displacement(dx, dy);
 		
