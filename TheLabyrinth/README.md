@@ -4,7 +4,7 @@ aw yea how sick is THIS gonna be
 
 ##### to abstract or not to abstract
 
-i made the decision not to use a single abstract class.  this isn't an act of protest or anything.  rather, after i started coding an abstract class, i realized that i could make the program work without them.  in my mind, simplicity trumps all, and while abstract classes have their uses, i thought i could do the same work more succinctly.
+i made the decision not to use a single abstract class.  this isn't an act of protest or anything.  rather, after i started coding an abstract class, i realized that i could make the program work without them.  in my mind, simplicity trumps all, and while abstract classes have their uses, i thought i could peform the same tasks more succinctly.
 
 in lieu of abstract classes, i turned all game entities into one of two objects: `GameObject` and `GameCharacter`, which extends `GameObject.`
 
