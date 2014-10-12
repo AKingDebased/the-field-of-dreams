@@ -1,8 +1,7 @@
 package edu.lmu.cmsi.gabriel.thelabyrinth.engine;
 
 import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.GameObject;
-import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.Player;
-import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.Monster;
+import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.GameCharacter;
 
 public class GameEngine {
 
@@ -10,9 +9,9 @@ public class GameEngine {
   private int size;
 
   // Game Objects
-  private GameObjects[] walls;
-  private Character player;
-  private Character[] monsters;
+  private GameObject[] walls;
+  private GameCharacter player;
+  private GameCharacter[] monsters;
 
   public GameEngine(int size) {
     if (size < 1) {
@@ -24,12 +23,12 @@ public class GameEngine {
     // do this in a separate method to keep the constructor clean
     this.createWalls();
 
-    this.player = new Player(3, 4);
-    this.monsters = new Character[3];
-    this.monsters[0] = new Character(4, 3, 1, 0, 'z');
-    this.monsters[1] = new Character(10, 12, 0, 1, 'x');
-    this.monsters[2] = new Character(8, 17, 1, 1, 'a');
-    this.monsters[3] = new Character(1, 1, 0, 0, 's');
+    this.player = new GameCharacter(3, 4, 'p');
+    this.monsters = new GameCharacter[4];
+    this.monsters[0] = new GameCharacter(4, 3, 1, 0, 'z');
+    this.monsters[1] = new GameCharacter(10, 12, 0, 1, 'x');
+    this.monsters[2] = new GameCharacter(8, 17, 1, 1, 'a');
+    this.monsters[3] = new GameCharacter(1, 1, 0, 0, 's');
   }
 
   private void createWalls() {
@@ -50,7 +49,7 @@ public class GameEngine {
     for (int y = 1; y < size - 1; y++) {
       GameObject y1 = new GameObject(0, y,'w');
       walls[wallCount++] = y1;
-      GameObject y2 = new GameObject(this.size - 1, y);
+      GameObject y2 = new GameObject(this.size - 1, y,'w');
       walls[wallCount++] = y2;
     }
   }
@@ -70,16 +69,16 @@ public class GameEngine {
     //walls
     for (int i = 0; i < this.walls.length; i++) {
       GameObject w = this.walls[i];
-      renderedWorld[w.getY()][w.getX()] = Character.toString(w.getRenderedCharacter());
+      renderedWorld[w.getY()][w.getX()] = Character.toString(w.getRenderedChar());
     }
 
     renderedWorld[this.player.getY()][this.player.getX()] =
-        Character.toString(this.player.getRenderedCharacter());
+        Character.toString(this.player.getRenderedChar());
 
     // monster
     for (int i = 0; i < this.monsters.length; i++) {
-      Monster m = this.monsters[i];
-      renderedWorld[m.getY()][m.getX()] = Character.toString(m.getRenderedCharacter());
+      GameCharacter m = this.monsters[i];
+      renderedWorld[m.getY()][m.getX()] = Character.toString(m.getRenderedChar());
     }
 
     System.out.println("=========================");

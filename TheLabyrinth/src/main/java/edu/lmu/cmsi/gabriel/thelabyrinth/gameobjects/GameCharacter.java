@@ -1,14 +1,24 @@
 package edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects;
 
 import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.GameObject;
+import edu.lmu.cmsi.gabriel.thelabyrinth.core.Displacement;
 
-public class Character extends GameObject{
+public class GameCharacter extends GameObject{
 
 	private Displacement displacement;
 
-	public Character(int x, int y, char renderedChar, int dx, int dy){
+	///if no displacement is given, GameCharacter is assumed to be a player
+	public GameCharacter(int x, int y, char renderedChar){ 
 		super(x,y,renderedChar);
+		this.displacement = new Displacement(1, 0);
+		
+	}
+
+	public GameCharacter(int x, int y, int dx, int dy, char renderedChar){
+		super(x,y,renderedChar);
+
 		this.displacement = new Displacement(dx, dy);
+		
 	}
 
 	public void update() {
@@ -16,8 +26,8 @@ public class Character extends GameObject{
     	this.location.setY(this.location.getY() + this.displacement.getYDisplacement());
  	}
 
- 	public void checkCollision(Gameobject wall) {
-    	if (this.getX() == w.getX() && this.getY() == w.getY()) {
+ 	public void checkCollision(GameObject entity) {
+    	if (this.getX() == entity.getX() && this.getY() == entity.getY()) {
       		displacement.invert();
     	}
   	}

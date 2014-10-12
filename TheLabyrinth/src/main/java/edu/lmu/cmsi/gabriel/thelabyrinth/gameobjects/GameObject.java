@@ -1,9 +1,11 @@
 package edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects;
 
+import edu.lmu.cmsi.gabriel.thelabyrinth.core.Coordinate;
+
 public class GameObject{
 
-	private Coordinate location;
-	private char renderedChar;
+	protected Coordinate location; //protected so that child classes have access
+	protected char renderedChar;
 
 	public GameObject(int x, int y, char renderedChar){
 		this.location = new Coordinate(x, y);
