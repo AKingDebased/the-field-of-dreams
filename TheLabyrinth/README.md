@@ -10,7 +10,7 @@ in lieu of abstract classes, i turned all game entities into one of two objects:
 
 to my understanding, one of the big things about abstract classes (though obviously not the only thing about them) is that they cannot be instantiated.  in my design, i realized i wanted my base game entity classes to be instantiable.  
 
-to that effect, i took inspiration from the Unity3D design engine, which turns every single entity in the engine into a `GameObject.`  all non-moving entities (rocks, trees, walls) are base `GameObjects.`  anything with behavior (players and monsters) are `GameCharacters`, which inherits all the behaviors from `GameObjects` but adds its own funcionality for movement, attack, and health.
+to that effect, i took inspiration from the Unity3D design engine, which turns every single entity in the engine into a `GameObject.`  all non-moving entities (rocks, trees, walls) are base `GameObjects.`  anything with behavior (players and monsters) is a `GameCharacter`, which inherits all the behaviors from `GameObjects` but adds its own functionality for movement, attack, and health.
 
 ##### Types.java
 
