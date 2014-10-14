@@ -14,10 +14,19 @@ public class Player extends GameCharacter{
 	}
 
 	public void dealDamage(Monster monster){
-		if(monster instanceof MonsterAS){
-			//
+		double hitChance = Math.random();
+
+		if(monster instanceof MonsterAS || monster instanceof MonsterZX){
+			if (hitChance > 0.5){
+				monster.hit();
+			}
+		} else if (monster instanceof BossOK){
+			if (hitChance > 0.7){
+				monster.hit();
+			}
+		} else {
+			return;
 		}
-		
 	}
 
 	protected void verifyRenderedChar(char renderedChar){
