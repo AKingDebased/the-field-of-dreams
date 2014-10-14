@@ -13,7 +13,7 @@ public class App {
     System.out.println("welcome to the labyrinth");
     System.out.println("commands are: [n]ext frame or [q]uit");
     this.keyboard = new Scanner(System.in);
-    this.engine = new GameEngine(12);
+    this.engine = new GameEngine(4);
   }
 
   /*

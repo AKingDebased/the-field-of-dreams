@@ -28,15 +28,15 @@ public class GameEngine {
     // do this in a separate method to keep the constructor clean
     this.createWalls();
 
-    this.player = new Player(2, 2, 'p');
+    this.player = new Player(1, 2, 'p');
 
-    this.monsters = new Monster[6];
-    this.monsters[0] = new MonsterZX(4, 3, 1, 0, 'z');
-    this.monsters[1] = new MonsterZX(9, 9, 0, 1, 'x');
+    this.monsters = new Monster[1];
+    this.monsters[0] = new MonsterZX(2, 1, 0, 0, 'z');
+    /*this.monsters[1] = new MonsterZX(9, 9, 0, 1, 'x');
     this.monsters[2] = new MonsterAS(8, 7, 1, 1, 'a');
     this.monsters[3] = new MonsterAS(1, 1, 1, 0, 's');
     this.monsters[4] = new BossOK(5, 5, 1, 0, 'o');
-    this.monsters[5] = new BossOK(8, 8, 0, 1, 'k');
+    this.monsters[5] = new BossOK(8, 8, 0, 1, 'k');*/
   }
 
   private void createWalls() {

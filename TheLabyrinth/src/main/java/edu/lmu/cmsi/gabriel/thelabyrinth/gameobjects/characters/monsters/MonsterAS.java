@@ -12,7 +12,11 @@ public class MonsterAS extends Monster {
 	}
 
 	public void dealDamage(Player player){
-		//
+		double hitChance = Math.random();
+
+		if(hitChance > 0.4){
+			player.hit();
+		}
 	}
 
 	protected void verifyRenderedChar(char renderedChar){

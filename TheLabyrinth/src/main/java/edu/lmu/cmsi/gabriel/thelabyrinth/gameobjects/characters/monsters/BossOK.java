@@ -7,12 +7,16 @@ public class BossOK extends Monster{
 
 	public BossOK(int x, int y, int dx, int dy, char renderedChar){
 		super(x,y,dx,dy,renderedChar);
-		
+
 		verifyRenderedChar(renderedChar);
 	}
 
 	public void dealDamage(Player player){
-		//
+		double hitChance = Math.random();
+
+		if(hitChance > 0.3){
+			player.hit();
+		}
 	}
 
 	protected void verifyRenderedChar(char renderedChar){
