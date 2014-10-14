@@ -24,6 +24,4 @@ public abstract class GameObject{
   public char getRenderedChar(){
   	return this.renderedChar;
   }
-
-  //public void dealDamage();
 }

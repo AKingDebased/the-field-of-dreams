@@ -1,9 +1,9 @@
 package edu.lmu.cmsi.gabriel.thelabyrinth.engine;
 
-import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.GameCharacter;
-import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.characters.MonsterZX;
-import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.characters.MonsterAS;
-import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.characters.BossOK;
+import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.characters.monsters.MonsterZX;
+import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.characters.monsters.MonsterAS;
+import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.characters.monsters.BossOK;
+import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.characters.monsters.Monster;
 import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.characters.Player;
 import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.obstacles.Obstacle;
 
@@ -15,7 +15,7 @@ public class GameEngine {
   // Game Objects
   private Obstacle[] walls;
   private Player player;
-  private GameCharacter[] monsters;
+  private Monster[] monsters;
 
   public GameEngine(int size) {
 
@@ -30,7 +30,7 @@ public class GameEngine {
 
     this.player = new Player(2, 2, 'p');
 
-    this.monsters = new GameCharacter[6];
+    this.monsters = new Monster[6];
     this.monsters[0] = new MonsterZX(4, 3, 1, 0, 'z');
     this.monsters[1] = new MonsterZX(9, 9, 0, 1, 'x');
     this.monsters[2] = new MonsterAS(8, 7, 1, 1, 'a');
@@ -85,7 +85,7 @@ public class GameEngine {
 
     // monsters
     for (int i = 0; i < this.monsters.length; i++) {
-      GameCharacter m = this.monsters[i];
+      Monster m = this.monsters[i];
       renderedWorld[m.getY()][m.getX()] = Character.toString(m.getRenderedChar());
     }
 
@@ -107,16 +107,16 @@ public class GameEngine {
 
     System.out.println("=========================");
 
-    displayHitsTaken();
+    //displayHitsTaken();
   }
 
-  private void displayHitsTaken(){ // separate method to keep render() organized
+  /*private void displayHitsTaken(){ // separate method to keep render() organized
     System.out.println("player hits taken: " + player.getHitsTaken());
     System.out.println("monster z hits taken: " + player.getHitsTaken());
     System.out.println("monster x hits taken: " + player.getHitsTaken());
     System.out.println("monster a hits taken: " + player.getHitsTaken());
     System.out.println("monster s hits taken: " + player.getHitsTaken());
-  }
+  }*/
 
   private void updateObjects() {
     // duplication's gone, baby
