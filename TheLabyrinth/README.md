@@ -13,13 +13,12 @@ namely, i've found that abstract classes are very useful for giving a group of c
 
 ##### dealDamage()
 
-` as i've said before, i like documentative code.  in order to keep the code as documentative as possible, i opted for a relatively large amount of specific classes.  this was done such that the monsters' `dealDamage()` method could be made to specifically target the `Player` object.  in this way, the method comes with its own implicit error handling.  monsters can't damage monsters because they cannot accept anything but `Player` objects as parameters, and vice versa.  while it does mean i have a large amount of relatively small classes, i find the verbosity pays off in clarity.
+* as i've said before, i like documentative code.  in order to keep the code as documentative as possible, i opted for a relatively large amount of specific classes.  this was done such that the monsters' `dealDamage()` method could be made to specifically target the `Player` object.  in this way, the method comes with its own implicit error handling.  monsters can't damage monsters because they cannot accept anything but `Player` objects as parameters, and vice versa.  while it does mean i have a large amount of relatively small classes, i find the verbosity pays off in clarity.
 
-` the hit chance percentages are determined 
 
 ##### Obstacle.java
 
-` the only thing that separates walls from trees and rocks is that they do no damage (and have a different rendered character).  thus, i didn't want to create a whole new class just for walls.  compromise: i created an `isWall` boolean flag.
+* the only thing that separates walls from trees and rocks is that they do no damage (and have a different rendered character).  thus, i didn't want to create a whole new class just for walls.  compromise: i created an `isWall` boolean flag.
 
 
 ##### known bugs
