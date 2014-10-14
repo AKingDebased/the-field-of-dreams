@@ -5,7 +5,7 @@ import edu.lmu.cmsi.gabriel.thelabyrinth.core.Types;
 
 public abstract class GameObject{
 
-	protected Coordinate location; //protected so that child classes have access
+	protected Coordinate location; //protected so child classes have access
 	protected char renderedChar;
 
 	public GameObject(int x, int y, char renderedChar){
@@ -24,4 +24,6 @@ public abstract class GameObject{
   public char getRenderedChar(){
   	return this.renderedChar;
   }
+
+  protected abstract void verifyRenderedChar(char renderedChar); //protected so child classes have access
 }

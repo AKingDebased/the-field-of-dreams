@@ -7,9 +7,19 @@ public class MonsterAS extends Monster {
 
 	public MonsterAS(int x, int y, int dx, int dy, char renderedChar){
 		super(x,y,dx,dy,renderedChar);
+
+		verifyRenderedChar(renderedChar);
 	}
 
 	public void dealDamage(Player player){
 		//
+	}
+
+	protected void verifyRenderedChar(char renderedChar){
+		if (renderedChar == 'a' || renderedChar == 's'){
+			return;
+		} else{
+			throw new IllegalArgumentException();
+		}
 	}
 }

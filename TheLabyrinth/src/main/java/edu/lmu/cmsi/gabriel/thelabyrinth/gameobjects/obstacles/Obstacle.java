@@ -9,6 +9,8 @@ public class Obstacle extends GameObject{
 
 	public Obstacle(int x, int y, char renderedChar){
 		super(x,y,renderedChar);
+		
+		verifyRenderedChar(renderedChar);
 
 		isWall = renderedChar == 'w';
 	}
@@ -20,5 +22,12 @@ public class Obstacle extends GameObject{
 
 		target.hit();
 	}
-	
+
+	protected void verifyRenderedChar(char renderedChar){
+		if (renderedChar == 't' || renderedChar == 'r' || renderedChar == 'w'){
+			return;
+		} else{
+			throw new IllegalArgumentException();
+		}
+	}
 }

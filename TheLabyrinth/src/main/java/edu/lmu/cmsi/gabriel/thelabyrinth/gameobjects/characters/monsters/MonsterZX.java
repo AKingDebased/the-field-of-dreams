@@ -8,9 +8,18 @@ public class MonsterZX extends Monster {
 	public MonsterZX(int x, int y, int dx, int dy, char renderedChar){
 		super(x,y,dx,dy,renderedChar);
 
+		verifyRenderedChar(super.renderedChar);
 	}
 
 	public void dealDamage(Player player){
 		//
+	}
+
+	protected void verifyRenderedChar(char renderedChar){
+		if (renderedChar == 'z' || renderedChar == 'x'){
+			return;
+		} else{
+			throw new IllegalArgumentException();
+		}
 	}
 }

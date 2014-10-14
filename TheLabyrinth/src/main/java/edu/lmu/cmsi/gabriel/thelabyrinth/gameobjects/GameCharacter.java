@@ -7,14 +7,12 @@ import edu.lmu.cmsi.gabriel.thelabyrinth.core.Types;
 public abstract class GameCharacter extends GameObject{
 
 	private Displacement displacement;
-	private boolean isMonster;
 	private int hitsTaken = 0;
 
 	///if no displacement is given, GameCharacter is assumed to be a player
 	public GameCharacter(int x, int y, char renderedChar){ 
 		super(x,y,renderedChar);
 		this.displacement = new Displacement(1, 0);
-		this.isMonster = renderedChar != 'p';
 	}
 
 	public GameCharacter(int x, int y, int dx, int dy, char renderedChar){
@@ -32,10 +30,6 @@ public abstract class GameCharacter extends GameObject{
     	if (this.getX() == gameObject.getX() && this.getY() == gameObject.getY()) {
       		displacement.invert();
       	}
-  	}
-
-  	public boolean isMonster(){
-  		return isMonster;
   	}
 
   	public int getHitsTaken(){

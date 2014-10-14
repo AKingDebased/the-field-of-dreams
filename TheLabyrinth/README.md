@@ -21,3 +21,7 @@ while it does mean i have a large amount of relatively small classes, i find the
 ##### known bugs
 
 * there's currently nothing handling game objects leaving the bounds of the maze.  if a game object is allowed to move two spaces each update and it happens to go past a wall, the program will explode.
+
+##### concerns and questions
+
+* i gave all GameObjects a `verifyRenderedChar()` method with protected level privacy.  this was done in an effort to give the closest thing to a private variable to all child classes.  however, i'm not sure if something like this is totally safe/follows best practices

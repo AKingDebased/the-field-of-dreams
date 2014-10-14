@@ -107,16 +107,16 @@ public class GameEngine {
 
     System.out.println("=========================");
 
-    //displayHitsTaken();
+    displayHitsTaken();
   }
 
-  /*private void displayHitsTaken(){ // separate method to keep render() organized
+  private void displayHitsTaken(){ // separate method to keep render() organized
     System.out.println("player hits taken: " + player.getHitsTaken());
     System.out.println("monster z hits taken: " + player.getHitsTaken());
     System.out.println("monster x hits taken: " + player.getHitsTaken());
     System.out.println("monster a hits taken: " + player.getHitsTaken());
     System.out.println("monster s hits taken: " + player.getHitsTaken());
-  }*/
+  }
 
   private void updateObjects() {
     // duplication's gone, baby
