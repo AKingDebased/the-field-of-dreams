@@ -27,4 +27,4 @@ namely, i've found that abstract classes are very useful for giving a group of c
 
 ##### concerns and questions
 
-* i gave all GameObjects a `verifyRenderedChar()` method with protected level privacy.  this was done in an effort to give the closest thing to a private variable to all child classes.  however, i'm not sure if something like this is totally safe/follows best practices
+* i gave all GameObjects a `verifyRenderedChar()` method with protected level privacy.  this was done in an effort to give the closest thing to a private method to all child classes.  however, i'm not sure if something like this is totally safe/follows best practices
