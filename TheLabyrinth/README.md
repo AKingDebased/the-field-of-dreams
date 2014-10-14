@@ -1,13 +1,9 @@
 
-
-
 ### the labyrinth
-
-aw yea how sick is THIS gonna be
 
 ##### abstraction: a journey
 
-* this program inititally started with the goal of using no abstract classes.  it wasn't for lack of understanding, i just wanted to see how simple i could keep the code.
+this program inititally started with the goal of using no abstract classes.  it wasn't for lack of understanding, i just wanted to see how simple i could keep the code.
 
 the answer: not very simple at all.
 
@@ -17,7 +13,7 @@ namely, i've found that abstract classes are very useful for giving a group of c
 
 ##### dealDamage()
 
-* as i've said before, i like documentative code.  in order to keep the code as documentative as possible, i opted for a relatively large amount of specific classes.  this was done such that the monsters' `dealDamage()` method could be made to specifically target the `Player` object.  in this way, the method comes with its own implicit error handling.  monsters can't damage monsters because they cannot accept anything but `Player` objects as parameters, and vice versa.
+as i've said before, i like documentative code.  in order to keep the code as documentative as possible, i opted for a relatively large amount of specific classes.  this was done such that the monsters' `dealDamage()` method could be made to specifically target the `Player` object.  in this way, the method comes with its own implicit error handling.  monsters can't damage monsters because they cannot accept anything but `Player` objects as parameters, and vice versa.
 
 while it does mean i have a large amount of relatively small classes, i find the verbosity pays off in clarity.
 
