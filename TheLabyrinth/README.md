@@ -1,3 +1,6 @@
+there's currently nothing handling game objects leaving the bounds of the maze.  if a game object is allowed to move two spaces each update and it happens to go past a wall, the program will explode.
+
+
 ### the labyrinth
 
 aw yea how sick is THIS gonna be

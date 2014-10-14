@@ -1,7 +1,12 @@
 edu/lmu/cmsi/gabriel/thelabyrinth/engine/GameEngine.class
 edu/lmu/cmsi/gabriel/thelabyrinth/gameobjects/GameCharacter.class
 edu/lmu/cmsi/gabriel/thelabyrinth/core/Coordinate.class
+edu/lmu/cmsi/gabriel/thelabyrinth/gameobjects/characters/MonsterAS.class
+edu/lmu/cmsi/gabriel/thelabyrinth/gameobjects/characters/MonsterZX.class
+edu/lmu/cmsi/gabriel/thelabyrinth/gameobjects/characters/BossOK.class
 edu/lmu/cmsi/gabriel/thelabyrinth/gameobjects/GameObject.class
 edu/lmu/cmsi/gabriel/thelabyrinth/core/Displacement.class
+edu/lmu/cmsi/gabriel/thelabyrinth/gameobjects/characters/Player.class
 edu/lmu/cmsi/gabriel/thelabyrinth/core/Types.class
 edu/lmu/cmsi/gabriel/thelabyrinth/App.class
+edu/lmu/cmsi/gabriel/thelabyrinth/gameobjects/obstacles/Obstacle.class

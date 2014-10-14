@@ -4,22 +4,21 @@ import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.GameObject;
 import edu.lmu.cmsi.gabriel.thelabyrinth.core.Displacement;
 import edu.lmu.cmsi.gabriel.thelabyrinth.core.Types;
 
-public class GameCharacter extends GameObject{
+public abstract class GameCharacter extends GameObject{
 
 	private Displacement displacement;
+	private int hitsTaken = 0;
 
 	///if no displacement is given, GameCharacter is assumed to be a player
-	public GameCharacter(int x, int y, Types type){ 
-		super(x,y,type);
+	public GameCharacter(int x, int y, char renderedChar){ 
+		super(x,y,renderedChar);
 		this.displacement = new Displacement(1, 0);
-		
 	}
 
-	public GameCharacter(int x, int y, int dx, int dy, Types type){
-		super(x,y,type);
+	public GameCharacter(int x, int y, int dx, int dy, char renderedChar){
+		super(x,y,renderedChar);
 
 		this.displacement = new Displacement(dx, dy);
-		
 	}
 
 	public void update() {
@@ -27,13 +26,17 @@ public class GameCharacter extends GameObject{
     	this.location.setY(this.location.getY() + this.displacement.getYDisplacement());
  	}
 
- 	public void checkCollision(GameObject entity) {
-    	if (this.getX() == entity.getX() && this.getY() == entity.getY()) {
+ 	public void checkCollision(GameObject gameObject) {
+    	if (this.getX() == gameObject.getX() && this.getY() == gameObject.getY()) {
       		displacement.invert();
-    	}
+      	}
   	}
 
-  	public void dealDamage(Character target){
+  	public int getHitsTaken(){
+  		return this.hitsTaken;
+  	}
 
+  	public void hit(){
+  		this.hitsTaken++;
   	}
 }

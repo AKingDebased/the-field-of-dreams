@@ -1,8 +1,11 @@
 package edu.lmu.cmsi.gabriel.thelabyrinth.engine;
 
-import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.GameObject;
 import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.GameCharacter;
-import edu.lmu.cmsi.gabriel.thelabyrinth.core.Types;
+import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.characters.MonsterZX;
+import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.characters.MonsterAS;
+import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.characters.BossOK;
+import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.characters.Player;
+import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.obstacles.Obstacle;
 
 public class GameEngine {
 
@@ -10,11 +13,12 @@ public class GameEngine {
   private int size;
 
   // Game Objects
-  private GameObject[] walls;
-  private GameCharacter player;
+  private Obstacle[] walls;
+  private Player player;
   private GameCharacter[] monsters;
 
   public GameEngine(int size) {
+
     if (size < 1) {
       throw new IllegalArgumentException("the world should exist.  sorry sartre.");
     }
@@ -24,12 +28,15 @@ public class GameEngine {
     // do this in a separate method to keep the constructor clean
     this.createWalls();
 
-    this.player = new GameCharacter(3, 4, Types.PLAYER);
-    this.monsters = new GameCharacter[4];
-    this.monsters[0] = new GameCharacter(4, 3, 1, 0, Types.MONSTER_Z);
-    this.monsters[1] = new GameCharacter(10, 12, 0, 1, Types.MONSTER_X);
-    this.monsters[2] = new GameCharacter(8, 17, 1, 1, Types.MONSTER_A);
-    this.monsters[3] = new GameCharacter(1, 1, 0, 0, Types.MONSTER_S);
+    this.player = new Player(2, 2, 'p');
+
+    this.monsters = new GameCharacter[6];
+    this.monsters[0] = new MonsterZX(4, 3, 1, 0, 'z');
+    this.monsters[1] = new MonsterZX(9, 9, 0, 1, 'x');
+    this.monsters[2] = new MonsterAS(8, 7, 1, 1, 'a');
+    this.monsters[3] = new MonsterAS(1, 1, 1, 0, 's');
+    this.monsters[4] = new BossOK(5, 5, 1, 0, 'o');
+    this.monsters[5] = new BossOK(8, 8, 0, 1, 'k');
   }
 
   private void createWalls() {
@@ -38,19 +45,19 @@ public class GameEngine {
 
     int wallCount = 0;
     // calculate the amount of walls we'll need
-    this.walls = new GameObject[this.size * 4 - 4];
+    this.walls = new Obstacle[this.size * 4 - 4];
 
     for (int x = 0; x < this.size; x++) {
-      GameObject x1 = new GameObject(x, 0, Types.WALL);
+      Obstacle x1 = new Obstacle(x, 0, 'w');
       walls[wallCount++] = x1;
-      GameObject x2 = new GameObject(x, this.size - 1,Types.WALL);
+      Obstacle x2 = new Obstacle(x, this.size - 1,'w');
       walls[wallCount++] = x2;
     }
 
     for (int y = 1; y < size - 1; y++) {
-      GameObject y1 = new GameObject(0, y,Types.WALL);
+      Obstacle y1 = new Obstacle(0, y,'w');
       walls[wallCount++] = y1;
-      GameObject y2 = new GameObject(this.size - 1, y,Types.WALL);
+      Obstacle y2 = new Obstacle(this.size - 1, y,'w');
       walls[wallCount++] = y2;
     }
   }
@@ -69,7 +76,7 @@ public class GameEngine {
 
     //walls
     for (int i = 0; i < this.walls.length; i++) {
-      GameObject w = this.walls[i];
+      Obstacle w = this.walls[i];
       renderedWorld[w.getY()][w.getX()] = Character.toString(w.getRenderedChar());
     }
 
@@ -99,6 +106,16 @@ public class GameEngine {
     }
 
     System.out.println("=========================");
+
+    displayHitsTaken();
+  }
+
+  private void displayHitsTaken(){ // separate method to keep render() organized
+    System.out.println("player hits taken: " + player.getHitsTaken());
+    System.out.println("monster z hits taken: " + player.getHitsTaken());
+    System.out.println("monster x hits taken: " + player.getHitsTaken());
+    System.out.println("monster a hits taken: " + player.getHitsTaken());
+    System.out.println("monster s hits taken: " + player.getHitsTaken());
   }
 
   private void updateObjects() {
@@ -113,12 +130,12 @@ public class GameEngine {
 
   private void checkCollisions() {
     for (int i = 0; i < this.walls.length; i++) {
-      GameObject w = this.walls[i];
+      Obstacle w = this.walls[i];
       this.player.checkCollision(w);
     }
 
     for (int i = 0; i < this.walls.length; i++) {
-      GameObject w = this.walls[i];
+      Obstacle w = this.walls[i];
       for (int j = 0; j < this.monsters.length; j++) {
         this.monsters[j].checkCollision(w);
       }
