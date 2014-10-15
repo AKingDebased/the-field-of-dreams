@@ -4,7 +4,6 @@ edu/lmu/cmsi/gabriel/thelabyrinth/gameobjects/characters/monsters/MonsterZX.clas
 edu/lmu/cmsi/gabriel/thelabyrinth/gameobjects/GameObject.class
 edu/lmu/cmsi/gabriel/thelabyrinth/gameobjects/characters/monsters/BossOK.class
 edu/lmu/cmsi/gabriel/thelabyrinth/gameobjects/characters/Player.class
-edu/lmu/cmsi/gabriel/thelabyrinth/core/Types.class
 edu/lmu/cmsi/gabriel/thelabyrinth/App.class
 edu/lmu/cmsi/gabriel/thelabyrinth/gameobjects/obstacles/Wall.class
 edu/lmu/cmsi/gabriel/thelabyrinth/gameobjects/GameCharacter.class
