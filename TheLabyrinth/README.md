@@ -13,10 +13,9 @@ namely, i've found that abstract classes are very useful for giving a group of c
 
 ##### checkCollision() and overloading
 
-i had a very bloody and protracted struggle with `checkCollision()`.  initially, the idea was to have one `checkCollision()` method with generic parameters in `Player.java` and `Monster.java` that could be used to detect monster/obstacle and player/obstacle collisions respectively. the issue with that came up with this method in `Player.java`:
+i had a very bloody and protracted struggle with `checkCollision()`.  initially, the idea was to have one `checkCollision()` method with generic parameters in `Player.java` and `Monster.java` that could be used to detect monster/obstacle and player/obstacle collisions respectively. the issue with that came up with this now method in `Player.java`:
 
 ```
-
 public <T extends GameObject> void checkCollision(T target){
 	if (getX() == target.getX() && getY() == target.getY()){ 
 		if (target instanceof Monster){
@@ -30,8 +29,12 @@ public <T extends GameObject> void checkCollision(T target){
 		}
 	}
 }
-
 ```
+
+the problem is on line 4, the `dealDamage(target)` method.  `dealDamage()` was designed to specifically take in an object of type Monster.  because the `checkCollision()` method took in a generic type T, `dealDamage()` would not accept the generic object.  
+
+my fix ended up being overloaded methods.  while this works, it feels kludgey and repetitious. i'm sure there's a better way to fix this, but for the life of me i simply could not figure it out.  please mike megally, you're my only hope.
+
 
 ##### dealDamage()
 
@@ -40,7 +43,7 @@ public <T extends GameObject> void checkCollision(T target){
 
 ##### Obstacle.java
 
-* the only thing that separates walls from trees and rocks is that they do no damage (and have a different rendered character).  thus, i didn't want to create a whole new class just for walls.  compromise: i created an `isWall` boolean flag.
+* originally, walls were just Obstacles with a boolean flag ticked.  however, since i was alread elbow deep in classes, i figured i'd just go all in and turn Wall into its own class.  is this the best design choice?  hell if i know.  but it works.
 
 ##### Monster.java/MonsterAS.java/MonsterZX.java/BossOK.java
 
