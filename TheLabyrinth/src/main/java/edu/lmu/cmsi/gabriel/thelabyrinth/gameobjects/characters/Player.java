@@ -14,7 +14,6 @@ public class Player extends GameCharacter{
 		verifyRenderedChar(renderedChar);
 	}
 
-	//ugly ugly ugly.  there must be some way to make these one method.  a generic maybe?
 	public void checkCollision(Monster monster){
 		if (getX() == monster.getX() && getY() == monster.getY()){ //if there's a collision
 				dealDamage(monster);

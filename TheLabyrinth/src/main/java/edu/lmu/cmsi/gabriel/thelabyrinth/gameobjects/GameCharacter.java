@@ -18,10 +18,10 @@ public abstract class GameCharacter extends GameObject{
 
 	public GameCharacter(int x, int y, int dx, int dy, char renderedChar){
 		super(x,y,renderedChar);
-
 		this.displacement = new Displacement(dx, dy);
 	}
 
+	//ugly ugly ugly.  there must be some way to make these one method.  a generic maybe?
 	public void checkCollision(Wall wall){
 		if (getX() == wall.getX() && getY() == wall.getY()){ 
 				this.displacement.invert();
