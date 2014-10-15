@@ -20,6 +20,10 @@ namely, i've found that abstract classes are very useful for giving a group of c
 
 * the only thing that separates walls from trees and rocks is that they do no damage (and have a different rendered character).  thus, i didn't want to create a whole new class just for walls.  compromise: i created an `isWall` boolean flag.
 
+##### Monster.java/MonsterAS.java/MonsterZX.java/BossOK.java
+
+* if two things do the exact same thing but look different, they are essentially the same thing.  for that reason, `MonsterAS` (and all the rest) is a consolidated class that contains both Monster A and S.  when a `MonsterAS` object is instantiated, the developer must enter a `renderedChar` as a parameter.  if that char is invalid (e.g. not 'a' or 's' for MonsterAS), then the program throws an exception
+
 
 ##### known bugs
 
@@ -28,3 +32,5 @@ namely, i've found that abstract classes are very useful for giving a group of c
 ##### concerns and questions
 
 * i gave all GameObjects a `verifyRenderedChar()` method with protected level privacy.  this was done in an effort to give the closest thing to a private method to all child classes.  however, i'm not sure if something like this is totally safe/follows best practices
+
+* if i know all classes are going to have a certain private class, is it best practice to declare that class as protected in the parent?  or should i just implement the class as private throughout all the children without abstractly declaring it as protected?
