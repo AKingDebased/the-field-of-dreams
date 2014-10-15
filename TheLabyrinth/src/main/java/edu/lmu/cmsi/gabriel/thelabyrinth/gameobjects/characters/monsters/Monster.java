@@ -4,6 +4,7 @@ import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.GameObject;
 import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.GameCharacter;
 import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.characters.Player;
 import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.obstacles.Obstacle;
+import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.obstacles.Wall;
 
 public abstract class Monster extends GameCharacter{
 	protected double hitChance;
@@ -13,17 +14,17 @@ public abstract class Monster extends GameCharacter{
 	}
 
 	public <T extends GameObject> void checkCollision(T target){
-		/*if (this.getX() == gameObject.getX() && this.getY() == gameObject.getY()){ //if there's a collision
-			if(gameObject.getClass().equals(Player.class)){
-				dealDamage(gameObject);
-			} else if (gameObject.getClass().equals(Obstacle.class)) {
-				if(gameObject.isWall()){
+		if (getX() == target.getX() && getY() == target.getY()){ //if there's a collision
+			if (target instanceof Player){
+				dealDamage(target);
+			} else if (target instanceof Obstacle) {
+				if(target instanceof Wall){
 					this.displacement.invert();
 				} else {
 					this.hit();
 				}
 			}
-		}*/
+		}
 	}
 
 	protected void dealDamage(GameObject gameObject){

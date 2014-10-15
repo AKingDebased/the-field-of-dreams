@@ -18,10 +18,10 @@ public class Player extends GameCharacter{
 
 	public <T extends GameObject> void checkCollision(T target){
 		if (getX() == target.getX() && getY() == target.getY()){ //if there's a collision
-			if (target.getClass().equals(Monster.class)){
+			if (target instanceof Monster){
 				dealDamage(target);
-			} else if (target.getClass().equals(Obstacle.class)) {
-				if(target.getClass().equals(Wall.class)){
+			} else if (target instanceof Obstacle) {
+				if(target instanceof Wall){
 					this.displacement.invert();
 				} else {
 					this.hit();

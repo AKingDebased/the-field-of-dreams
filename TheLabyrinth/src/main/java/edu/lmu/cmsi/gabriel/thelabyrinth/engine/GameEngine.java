@@ -30,7 +30,7 @@ public class GameEngine {
     // do this in a separate method to keep the constructor clean
     this.createWalls();
 
-    this.player = new Player(1, 2, 'p');
+    this.player = new Player(2, 3, 'p');
 
     this.treesAndRocks = new Obstacle[4];
     this.treesAndRocks[0] = new Obstacle(5,5,'t');
@@ -53,7 +53,7 @@ public class GameEngine {
 
     int wallCount = 0;
     // calculate the amount of walls we'll need
-    this.walls = new Obstacle[this.size * 4 - 4];
+    this.walls = new Wall[this.size * 4 - 4];
 
     for (int x = 0; x < this.size; x++) {
       Wall x1 = new Wall(x, 0);
@@ -151,18 +151,26 @@ public class GameEngine {
       this.player.checkCollision(wall);
     }
 
+    for (int i = 0; i < this.treesAndRocks.length; i++){ //player and trees/rocks
+      Obstacle treeOrRock = this.treesAndRocks[i];
+
+      this.player.checkCollision(treeOrRock);
+    }
+
     for (int i = 0; i < this.walls.length; i++) { //monsters and walls
       Wall wall = this.walls[i];
 
       for (int j = 0; j < this.monsters.length; j++) {
         this.monsters[j].checkCollision(wall);
-
       }
     }
 
-    /*for (int i = 0; i < this.treesAndRocks.length; i++){ //player and yi
-      GameObject gameObject = this.
+     for (int i = 0; i < this.treesAndRocks.length; i++){ //monsters and trees/rocks
+      Obstacle treeOrRock = this.treesAndRocks[i];
 
-    }*/
+      for(int j = 0; j < this.monsters.length; j++) {
+        this.monsters[j].checkCollision(treeOrRock);
+      }
+    }
   }
 }

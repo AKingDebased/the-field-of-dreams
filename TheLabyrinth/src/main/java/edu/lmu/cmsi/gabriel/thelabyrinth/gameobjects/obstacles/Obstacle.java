@@ -12,7 +12,7 @@ public class Obstacle extends GameObject{
 	}
 
 	protected void verifyRenderedChar(char renderedChar){
-		if (renderedChar == 't' || renderedChar == 'r'){
+		if (renderedChar == 't' || renderedChar == 'r' || renderedChar == 'w'){
 			return;
 		} else{
 			throw new IllegalArgumentException();

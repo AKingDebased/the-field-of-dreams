@@ -21,8 +21,6 @@ public abstract class GameCharacter extends GameObject{
 		this.displacement = new Displacement(dx, dy);
 	}
 
-	public abstract <T extends GameObject> void checkCollision(T target);
-
 	public void update() {
     	this.location.setX(this.location.getX() + this.displacement.getXDisplacement());
     	this.location.setY(this.location.getY() + this.displacement.getYDisplacement());
@@ -35,4 +33,6 @@ public abstract class GameCharacter extends GameObject{
   	public void hit(){
   		this.hitsTaken++;
   	}
+
+  	public abstract <T extends GameObject> void checkCollision(T target);
 }
