@@ -6,7 +6,7 @@ import edu.lmu.cmsi.gabriel.thelabyrinth.core.Types;
 
 public abstract class GameCharacter extends GameObject{
 
-	private Displacement displacement;
+	protected Displacement displacement;
 	private int hitsTaken = 0;
 
 	///if no displacement is given, GameCharacter is assumed to be a player 
@@ -21,7 +21,7 @@ public abstract class GameCharacter extends GameObject{
 		this.displacement = new Displacement(dx, dy);
 	}
 
-	public abstract void checkCollision(GameObject gameObject);
+	public abstract <T extends GameObject> void checkCollision(T target);
 
 	public void update() {
     	this.location.setX(this.location.getX() + this.displacement.getXDisplacement());
@@ -35,6 +35,4 @@ public abstract class GameCharacter extends GameObject{
   	public void hit(){
   		this.hitsTaken++;
   	}
-
-  	public abstract void checkCollision(GameObject gameObject);
 }

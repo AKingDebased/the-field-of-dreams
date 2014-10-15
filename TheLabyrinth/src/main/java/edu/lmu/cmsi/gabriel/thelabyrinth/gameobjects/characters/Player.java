@@ -3,6 +3,7 @@ package edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.characters;
 import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.GameCharacter;
 import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.GameObject;
 import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.obstacles.Obstacle;
+import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.obstacles.Wall;
 import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.characters.monsters.Monster;
 import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.characters.monsters.MonsterAS;
 import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.characters.monsters.MonsterZX;
@@ -15,12 +16,22 @@ public class Player extends GameCharacter{
 		verifyRenderedChar(renderedChar);
 	}
 
-	public void checkCollision(GameObject gameObject){
-		//this.getX() == w.getX() && this.getY() == w.getY()
+	public <T extends GameObject> void checkCollision(T target){
+		if (getX() == target.getX() && getY() == target.getY()){ //if there's a collision
+			if (target.getClass().equals(Monster.class)){
+				dealDamage(target);
+			} else if (target.getClass().equals(Obstacle.class)) {
+				if(target.getClass().equals(Wall.class)){
+					this.displacement.invert();
+				} else {
+					this.hit();
+				}
+			}
+		}
 	}
 
-	public void dealDamage(Monster monster){
-		double hitChance = Math.random();
+	private void dealDamage(GameObject gameObject){
+		/*double hitChance = Math.random();
 
 		if(monster instanceof MonsterAS || monster instanceof MonsterZX){
 			if (hitChance > 0.5){
@@ -32,15 +43,7 @@ public class Player extends GameCharacter{
 			}
 		} else {
 			return;
-		}
-	}
-
-	private void monsterCollision(Monster monster){
-
-	}
-
-	private void objectCollision(Obstacle obstacle){
-
+		}*/
 	}
 
 	protected void verifyRenderedChar(char renderedChar){

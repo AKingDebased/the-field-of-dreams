@@ -14,14 +14,6 @@ public class MonsterZX extends Monster {
 		this.hitChance = 0.5;
 	}
 
-	public void checkCollision(GameObject gameObject){
-		if (gameObject instanceof Player ){	//if we hit the player
-			playerCollision((Player) gameObject);
-		} else if (gameObject instanceof Obstacle){		//if we hit an obstacle
-			objectCollision((Obstacle) gameObject);
-		}
-	}
-
 	protected void verifyRenderedChar(char renderedChar){
 		if (renderedChar == 'z' || renderedChar == 'x'){
 			return;
