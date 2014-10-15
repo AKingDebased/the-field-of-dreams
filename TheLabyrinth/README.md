@@ -9,11 +9,11 @@ the answer: not very simple at all.
 
 as it turns out, i ended up using three abstract classes and a whole slew of additional classes for all the game entities.  the reason for all these myriad classes boils down to one overriding principle: identity
 
-namely, i've found that abstract classes are very useful for giving a group of classes a unified identity.  specifically, all my monsters can be grouped as `Monster` objects.  why bother with this?  it's all because of the `checkCollision()` and `dealDamage()` method.  
+namely, i've found that abstract classes are very useful for giving a group of classes a unified identity.  specifically, all my monsters can be grouped as `Monster` objects.  why bother with this?  it's all because of the `checkCollision()` and `dealDamage()` methods.  
 
 ##### checkCollision() and overloading
 
-i had a very bloody and protracted struggle with `checkCollision()`.  initially, the idea was to have one `checkCollision()` method with generic parameters in `Player.java` and `Monster.java` that could be used to detect monster/obstacle and player/obstacle collisions respectively. the issue with that came up with this now method in `Player.java`:
+i had a very bloody and protracted struggle with `checkCollision()`.  initially, the idea was to have one `checkCollision()` method with generic parameters in `Player.java` and `Monster.java` that could be used to detect monster/obstacle and player/obstacle collisions respectively. the issue with that came up with this now deleted method in `Player.java`:
 
 ```
 public <T extends GameObject> void checkCollision(T target){
@@ -33,7 +33,7 @@ public <T extends GameObject> void checkCollision(T target){
 
 the problem is on line 4, the `dealDamage(target)` method.  `dealDamage()` was designed to specifically take in an object of type Monster.  because the `checkCollision()` method took in a generic type T, `dealDamage()` would not accept the generic object.  
 
-my fix ended up being overloaded methods.  while this works, it feels kludgey and repetitious. i'm sure there's a better way to fix this, but for the life of me i simply could not figure it out.  please mike megally, you're my only hope.
+my fix ended up being overloaded methods.  while this works, it feels kludgy and repetitious. i'm sure there's a better way to fix this, but for the life of me i simply could not figure it out.  please mike megally, you're my only hope.
 
 
 ##### dealDamage()
