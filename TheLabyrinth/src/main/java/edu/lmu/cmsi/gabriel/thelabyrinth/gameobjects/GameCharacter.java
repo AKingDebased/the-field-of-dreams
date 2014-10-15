@@ -1,8 +1,9 @@
 package edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects;
 
 import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.GameObject;
+import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.obstacles.Obstacle;
+import edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects.obstacles.Wall;
 import edu.lmu.cmsi.gabriel.thelabyrinth.core.Displacement;
-import edu.lmu.cmsi.gabriel.thelabyrinth.core.Types;
 
 public abstract class GameCharacter extends GameObject{
 
@@ -21,6 +22,18 @@ public abstract class GameCharacter extends GameObject{
 		this.displacement = new Displacement(dx, dy);
 	}
 
+	public void checkCollision(Wall wall){
+		if (getX() == wall.getX() && getY() == wall.getY()){ 
+				this.displacement.invert();
+		} 
+	}
+
+	public void checkCollision(Obstacle obstacle){
+		if (getX() == obstacle.getX() && getY() == obstacle.getY()){ 
+				this.hit();
+		} 
+	}
+
 	public void update() {
     	this.location.setX(this.location.getX() + this.displacement.getXDisplacement());
     	this.location.setY(this.location.getY() + this.displacement.getYDisplacement());
@@ -33,6 +46,4 @@ public abstract class GameCharacter extends GameObject{
   	public void hit(){
   		this.hitsTaken++;
   	}
-
-  	public abstract <T extends GameObject> void checkCollision(T target);
 }

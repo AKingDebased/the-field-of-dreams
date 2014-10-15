@@ -1,7 +1,6 @@
 package edu.lmu.cmsi.gabriel.thelabyrinth.gameobjects;
 
 import edu.lmu.cmsi.gabriel.thelabyrinth.core.Coordinate;
-import edu.lmu.cmsi.gabriel.thelabyrinth.core.Types;
 
 public abstract class GameObject{
 
