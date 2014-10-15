@@ -88,6 +88,7 @@ public class GameEngine {
       renderedWorld[w.getY()][w.getX()] = Character.toString(w.getRenderedChar());
     }
 
+    //player
     renderedWorld[this.player.getY()][this.player.getX()] =
         Character.toString(this.player.getRenderedChar());
 

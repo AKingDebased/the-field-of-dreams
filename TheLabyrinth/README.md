@@ -43,7 +43,7 @@ my fix ended up being overloaded methods.  while this works, it feels kludgy and
 
 ##### Obstacle.java
 
-* originally, walls were just Obstacles with a boolean flag ticked.  however, since i was alread elbow deep in classes, i figured i'd just go all in and turn Wall into its own class.  is this the best design choice?  hell if i know.  but it works.
+* originally, walls were just Obstacles with a boolean flag ticked.  however, since i was already elbow deep in classes, i figured i'd just go all in and turn Wall into its own class.  is this the best design choice?  hell if i know.  but it works.
 
 ##### Monster.java/MonsterAS.java/MonsterZX.java/BossOK.java
 
