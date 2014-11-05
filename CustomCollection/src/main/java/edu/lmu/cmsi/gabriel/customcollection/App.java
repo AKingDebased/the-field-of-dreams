@@ -19,9 +19,11 @@ public class App
         System.out.println(testList.getNewest());
         System.out.println(testList.getOldest());
         
+        System.out.println("overloading CCList");
         testList.add(0);
         
         System.out.println(testList.getNewest());
         System.out.println(testList.getOldest());
+        
     }
 }

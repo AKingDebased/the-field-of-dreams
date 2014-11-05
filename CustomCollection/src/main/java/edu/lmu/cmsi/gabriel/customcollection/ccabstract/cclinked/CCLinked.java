@@ -4,8 +4,8 @@ import edu.lmu.cmsi.gabriel.customcollection.ccabstract.CCAbstract;
 
 public class CCLinked<T> extends CCAbstract<T> {
 
-	public CCLinked(int size) {
-		super(size);
+	public CCLinked(int maxLength) {
+		super(maxLength);
 	}
 
 	@Override
@@ -16,6 +16,10 @@ public class CCLinked<T> extends CCAbstract<T> {
 	@Override
 	public T getNewest() {
 		return null;
+	}
+	
+	public int getSize(){
+		return 1;
 	}
 
 	@Override

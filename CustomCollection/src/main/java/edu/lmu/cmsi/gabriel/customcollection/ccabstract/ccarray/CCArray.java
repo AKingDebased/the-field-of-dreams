@@ -4,8 +4,8 @@ import edu.lmu.cmsi.gabriel.customcollection.ccabstract.CCAbstract;
 
 public class CCArray<E> extends CCAbstract<E> {
 	
-	public CCArray(int size) {
-		super(size);
+	public CCArray(int maxLength) {
+		super(maxLength);
 	}
 	
 	public E getOldest(){
@@ -16,6 +16,10 @@ public class CCArray<E> extends CCAbstract<E> {
 		
 		
 		return null;
+	}
+	
+	public int getSize(){
+		return 1;
 	}
 	
 	public void add(E e){

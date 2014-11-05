@@ -1,10 +1,10 @@
 package edu.lmu.cmsi.gabriel.customcollection.ccabstract;
 
 public abstract class CCAbstract<E> {
-	private int size;
+	protected int maxLength;
 	
-	public CCAbstract(int size){
-		this.size = size;
+	public CCAbstract(int maxLength){
+		this.maxLength = maxLength;
 	}
 	
 	public abstract E getOldest();
@@ -15,9 +15,5 @@ public abstract class CCAbstract<E> {
 	
 	public abstract void reset();
 	
-	public int getSize(){
-		return size;
-	}
-	
-
+	public abstract int getSize();
 }

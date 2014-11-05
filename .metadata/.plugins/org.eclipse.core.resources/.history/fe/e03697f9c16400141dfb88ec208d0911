@@ -1,0 +1,18 @@
+### Custom Collection
+
+* CC just stands for Custom Collection.
+
+##### on maven and compiling
+
+* you gave us the option to leave maven behind and go back to our old way of doing things.  well, 
+i went back to my old way, which is eclipse.  BUT I GOT THE MAVEN PLUG-IN BITCHES I CAN DO ANYTHING.
+less flippantly, you'll be able to run my program like a maven-built project because it is, in fact,
+a maven built project.
+
+##### CCAbstract
+
+* every implementation of `CCAbstract` maintains a private `maxLength` variable.  this represents
+ the maximum length of the collection as instantiated by the user. this is in contrast to, 
+ say, the CCList's use of `size()`, which comes from the Java ArrayList docs and represents 
+ the number of elements in the CCList.  since i had a variable i wanted all implementations of the 
+ Custom Collection to have, i settled on an abstract class (rather than an interface).

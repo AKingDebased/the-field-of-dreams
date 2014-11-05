@@ -1,0 +1,44 @@
+package edu.lmu.cmsi.gabriel.customcollection.ccabstract.cclist;
+
+import java.util.ArrayList;
+
+import edu.lmu.cmsi.gabriel.customcollection.ccabstract.CCAbstract;
+
+public class CCList<E> extends CCAbstract<E>{
+	public ArrayList<E> localList;
+	
+	public CCList(int maxLength) {
+		super(maxLength); 
+		localList = new ArrayList<E>(maxLength);
+	}
+
+	@Override
+	public E getOldest() {
+		return localList.get(0);
+	}
+
+	@Override
+	public E getNewest() {
+		return localList.get(localList.size()-1);
+	}
+
+	@Override
+	public void add(E type) {
+		if(type == null){
+			throw new IllegalArgumentException("null value");
+		}
+		
+		if(localList.size() < this.maxLength){
+			localList.add(type);
+		} else {
+			System.out.println("HI");
+			localList.add(this.maxLength - 1, type);
+		}
+	}
+
+	@Override
+	public void reset() {
+		localList.removeAll(localList);
+	}
+	
+}
