@@ -12,7 +12,7 @@ public class CCArray<E> extends CCAbstract<E> {
 	}
 	
 	public E getOldest(){
-		return (E) localArray[0];
+		return null;
 	}
 	
 	public E getNewest(){

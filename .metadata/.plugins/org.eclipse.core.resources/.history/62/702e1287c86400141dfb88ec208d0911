@@ -17,4 +17,5 @@ public abstract class CCAbstract<E> {
 	
 	public abstract int getSize();
 	
+	protected 
 }

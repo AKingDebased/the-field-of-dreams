@@ -16,5 +16,4 @@ public abstract class CCAbstract<E> {
 	public abstract void reset();
 	
 	public abstract int getSize();
-	
 }

@@ -2,6 +2,7 @@ package edu.lmu.cmsi.gabriel.customcollection;
 
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 import edu.lmu.cmsi.gabriel.customcollection.ccabstract.cclist.CCList;
 
 public class CCListTest {
@@ -70,21 +71,14 @@ public class CCListTest {
 	public void sizeAndResetTest(){
 		CCList<Integer> testCCList = new CCList<Integer>(4);
 		
-		fillCCList(testCCList, false);
-		testCCList.reset();
+		 fillCCList(testCCList, false);
+		 testCCList.reset();
 		 
-		assertEquals("failed - expected 0", 0, testCCList.getSize());
+		 assertEquals("failed - expected 0", 0, testCCList.getSize());
 	}
 	
 	@Test
 	public void iterationOrderTest(){
-		CCList<Integer> testCCList = new CCList<Integer>(15);
-		
-		for(int i = 0; i < 15; i++){
-			testCCList.add(i);
-		}
-		
-		
 		
 	}
 	

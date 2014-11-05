@@ -3,16 +3,13 @@ package edu.lmu.cmsi.gabriel.customcollection.ccabstract.ccarray;
 import edu.lmu.cmsi.gabriel.customcollection.ccabstract.CCAbstract;
 
 public class CCArray<E> extends CCAbstract<E> {
-	private int arrayElements = 0;
-	private Object[] localArray; 
-			
+	
 	public CCArray(int maxLength) {
 		super(maxLength);
-		localArray = new Object[maxLength];
 	}
 	
 	public E getOldest(){
-		return (E) localArray[0];
+		return null;
 	}
 	
 	public E getNewest(){
@@ -26,17 +23,6 @@ public class CCArray<E> extends CCAbstract<E> {
 	}
 	
 	public void add(E e){
-		if(e == null){
-			throw new IllegalArgumentException("null value");
-		}
-		
-		if(this.arrayElements < this.maxLength){
-			localArray[arrayElements] = e;
-			arrayElements++;
-		} else {
-			localList.remove(0);
-			localList.add(type);
-		}
 		
 	}
 	
