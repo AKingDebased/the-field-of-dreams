@@ -17,14 +17,9 @@ a maven built project.
  the number of elements in the CCList.  since i had a variable i wanted all implementations of the 
  Custom Collection to have, i settled on an abstract class (rather than an interface).
  
-##### LinkedLists and the third implementation
+##### ArrayLists and the third implementation
 
-* my third implementation is constructed upon LinkedLists. i ran unit tests with both an ArrayList 
-and LinkedList infrastructure, and they both executed at exactly the same speed.  however, i have
-heard tell that for insertion and deletion LinkedLists perform at (O(1)) while ArrayLists perform 
-at (O(n)).  since one of the main features of the CustomCollection is inserting new indices and deleting
-old indices, i figured i'd stick with linked lists. in a system this small the difference is incredibly negligible, 
-but i like to program with expansion in mind.
+* my third implementation is constructed upon ArrayLists. 
  
 ##### on magic numbers, for loops, and unit testing
 

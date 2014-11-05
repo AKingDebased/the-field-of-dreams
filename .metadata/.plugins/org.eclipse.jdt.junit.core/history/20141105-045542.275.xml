@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CCArrayTest" project="CustomCollection" tests="7" started="7" failures="0" errors="0" ignored="0">
+  <testsuite name="edu.lmu.cmsi.gabriel.customcollection.CCArrayTest" time="0.0">
+    <testcase name="testNull" classname="edu.lmu.cmsi.gabriel.customcollection.CCArrayTest" time="0.0"/>
+    <testcase name="sizeTest" classname="edu.lmu.cmsi.gabriel.customcollection.CCArrayTest" time="0.0"/>
+    <testcase name="sizeAndResetTest" classname="edu.lmu.cmsi.gabriel.customcollection.CCArrayTest" time="0.0"/>
+    <testcase name="greaterThanNGetNewest" classname="edu.lmu.cmsi.gabriel.customcollection.CCArrayTest" time="0.0"/>
+    <testcase name="greaterThanNGetOldest" classname="edu.lmu.cmsi.gabriel.customcollection.CCArrayTest" time="0.0"/>
+    <testcase name="lessThanNGetNewest" classname="edu.lmu.cmsi.gabriel.customcollection.CCArrayTest" time="0.0"/>
+    <testcase name="lessThanNGetOldest" classname="edu.lmu.cmsi.gabriel.customcollection.CCArrayTest" time="0.0"/>
+  </testsuite>
+</testrun>

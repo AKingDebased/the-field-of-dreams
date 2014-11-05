@@ -1,15 +1,16 @@
 package edu.lmu.cmsi.gabriel.customcollection.ccabstract.cclist;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 import edu.lmu.cmsi.gabriel.customcollection.ccabstract.CCAbstract;
+import edu.lmu.cmsi.gabriel.customcollection.ccabstract.ccarray.CCArrayIterator;
 
 public class CCList<E> extends CCAbstract<E>{
-	public LinkedList<E> localList;
+	public ArrayList<E> localList;
 	
 	public CCList(int maxLength) {
 		super(maxLength); 
-		localList = new LinkedList<E>();
+		localList = new ArrayList<E>(maxLength);
 	}
 
 	@Override
@@ -46,8 +47,8 @@ public class CCList<E> extends CCAbstract<E>{
 		localList.removeAll(localList);
 	}
 	
-	public LinkedList<E> iterator() {
-		return new LinkedList<E>(this.localList);
+	public ArrayList<E> iterator() {
+		return new ArrayList<E>(this.localList);
 	}
 	
 }

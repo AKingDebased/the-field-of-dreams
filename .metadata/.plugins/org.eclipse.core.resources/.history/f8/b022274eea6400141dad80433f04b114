@@ -3,6 +3,7 @@ package edu.lmu.cmsi.gabriel.customcollection.ccabstract.cclist;
 import java.util.LinkedList;
 
 import edu.lmu.cmsi.gabriel.customcollection.ccabstract.CCAbstract;
+import edu.lmu.cmsi.gabriel.customcollection.ccabstract.ccarray.CCArrayIterator;
 
 public class CCList<E> extends CCAbstract<E>{
 	public LinkedList<E> localList;

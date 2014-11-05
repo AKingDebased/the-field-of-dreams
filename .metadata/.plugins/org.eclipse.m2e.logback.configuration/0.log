@@ -1713,3 +1713,35 @@ java.lang.NullPointerException: null
 2014-11-05 04:38:31,553 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/main/resources
 2014-11-05 04:38:31,560 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2014-11-05 04:38:31,561 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/test/resources
+2014-11-05 04:45:46,116 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-05 04:45:46,117 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/main/resources
+2014-11-05 04:45:46,118 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-05 04:45:46,118 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/test/resources
+2014-11-05 04:49:29,822 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-05 04:49:29,834 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/main/resources
+2014-11-05 04:49:29,835 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-05 04:49:29,836 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/test/resources
+2014-11-05 04:49:39,718 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-05 04:49:39,718 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/main/resources
+2014-11-05 04:49:39,720 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-05 04:49:39,720 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/test/resources
+2014-11-05 04:50:22,605 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-05 04:50:22,605 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/main/resources
+2014-11-05 04:50:22,606 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-05 04:50:22,607 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/test/resources
+2014-11-05 04:51:21,416 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-05 04:51:21,416 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/main/resources
+2014-11-05 04:51:21,418 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-05 04:51:21,418 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/test/resources
+2014-11-05 04:51:39,993 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-05 04:51:39,994 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/main/resources
+2014-11-05 04:51:39,997 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-05 04:51:39,997 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/test/resources
+2014-11-05 04:54:12,618 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-05 04:54:12,619 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/main/resources
+2014-11-05 04:54:12,620 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-05 04:54:12,621 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/test/resources
+2014-11-05 04:55:18,615 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-05 04:55:18,616 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/main/resources
+2014-11-05 04:55:18,618 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-05 04:55:18,618 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/test/resources
