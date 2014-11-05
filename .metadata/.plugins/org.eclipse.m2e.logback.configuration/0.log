@@ -1411,3 +1411,20 @@ java.lang.NullPointerException: null
 2014-11-04 21:43:29,788 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/main/resources
 2014-11-04 21:43:29,790 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2014-11-04 21:43:29,790 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/test/resources
+2014-11-04 21:44:14,190 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-04 21:44:14,190 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/main/resources
+2014-11-04 21:44:14,192 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-04 21:44:14,193 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/test/resources
+2014-11-04 21:45:07,832 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-04 21:45:07,832 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/main/resources
+2014-11-04 21:45:07,834 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-04 21:45:07,834 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/test/resources
+2014-11-04 21:48:01,785 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.lmu.cmsi.gabriel:customcollection:0.0.1-SNAPSHOT @ /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/pom.xml.
+2014-11-04 21:48:01,979 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-04 21:48:01,979 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/main/resources
+2014-11-04 21:48:01,983 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-04 21:48:01,983 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/test/resources
+2014-11-04 21:48:04,427 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-04 21:48:04,427 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/main/resources
+2014-11-04 21:48:04,429 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-04 21:48:04,429 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/test/resources
