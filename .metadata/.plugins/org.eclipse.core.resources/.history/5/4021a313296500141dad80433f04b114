@@ -46,9 +46,4 @@ public class CCList<E> extends CCAbstract<E>{
 	public void reset() {
 		localList.removeAll(localList);
 	}
-	
-	public ListIterator<E> iterator() {
-		return localList.listIterator(0);
-	}
-	
 }

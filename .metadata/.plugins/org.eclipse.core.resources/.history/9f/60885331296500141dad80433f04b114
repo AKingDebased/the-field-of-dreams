@@ -3,13 +3,12 @@ package edu.lmu.cmsi.gabriel.customcollection;
 import java.util.Iterator;
 
 import edu.lmu.cmsi.gabriel.customcollection.ccabstract.ccarray.CCArray;
-import edu.lmu.cmsi.gabriel.customcollection.ccabstract.cclist.CCList;
 
 public class App 
 {
     public static void main( String[] args )
     {
-        CCList<Integer> testList = new CCList<Integer>(5);
+        CCArray<Integer> testList = new CCArray<Integer>(5);
         
         testList.add(1);
         testList.add(2);

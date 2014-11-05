@@ -11,9 +11,10 @@ public abstract class CCAbstract<E> {
 	
 	public abstract E getNewest();
 	
-	public abstract int getSize();
-	
 	public abstract void add(E e);
 	
 	public abstract void reset();
+	
+	public abstract int getSize();
+	
 }
