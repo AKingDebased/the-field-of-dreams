@@ -1,0 +1,24 @@
+### Custom Collection
+
+* CC just stands for Custom Collection.
+
+##### on maven and compiling
+
+* you gave us the option to leave maven behind and go back to our old way of doing things.  well, 
+i went back to my old way, which is eclipse.  BUT I GOT THE MAVEN PLUG-IN BITCHES I CAN DO ANYTHING.
+less flippantly, you'll be able to run my program like a maven-built project because it is, in fact,
+a maven built project.
+
+##### CCAbstract (i.e., why i am using an abstract class)
+
+* every implementation of `CCAbstract` maintains a private `maxLength` variable.  this represents
+ the maximum length of the collection as instantiated by the user. this is in contrast to, 
+ say, the CCList's use of `size()`, which comes from the Java ArrayList docs and represents 
+ the number of elements in the CCList.  since i had a variable i wanted all implementations of the 
+ Custom Collection to have, i settled on an abstract class (rather than an interface).
+ 
+#### on magic numbers, for loops, and unit testing
+
+* a lot of the for loops in my unit tests use hard coded numbers rather than references to a list's
+maximum length.  i figured i could allow the evil just this once rather than going in and coding
+a `getMaxLength()` method that would only be used for testing purposes.
