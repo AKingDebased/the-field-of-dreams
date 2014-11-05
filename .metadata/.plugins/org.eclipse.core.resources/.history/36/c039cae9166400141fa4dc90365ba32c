@@ -1,0 +1,18 @@
+package edu.lmu.cmsi.gabriel.customcollection.ccabstract;
+
+public abstract class CCAbstract<T> {
+	private int size;
+	
+	void CCAbstract(){
+		this.size = size;
+	}
+	
+	
+	public abstract T getOldest();
+	
+	public abstract T getNewest();
+	
+	public abstract void add(T type);
+	
+
+}

@@ -1,0 +1,7 @@
+package edu.lmu.cmsi.gabriel.customcollection.ccabstract.cclinked;
+
+import edu.lmu.cmsi.gabriel.customcollection.ccabstract.CCAbstract;
+
+public class CCLinked extends CCAbstract {
+
+}

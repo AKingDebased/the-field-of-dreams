@@ -1,0 +1,12 @@
+package edu.lmu.cmsi.gabriel.mrtcollection.abstractmrt;
+
+import java.util.Iterator;
+
+public class AbstractMRT<Type> implements Iterable<T> {
+	private Type genericType;
+
+	public Iterator<T> iterator() {
+		
+		return null;
+	}
+}

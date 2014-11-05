@@ -1,0 +1,7 @@
+package edu.lmu.cmsi.gabriel.customcollection.ccabstract.ccarray;
+
+import edu.lmu.cmsi.gabriel.customcollection.ccabstract.CCAbstract;
+
+public class CCArray extends CCAbstract {
+
+}

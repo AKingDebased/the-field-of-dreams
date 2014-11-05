@@ -1,0 +1,37 @@
+package edu.lmu.cmsi.gabriel.customcollection.ccabstract.cclist;
+
+import java.util.ArrayList;
+
+import edu.lmu.cmsi.gabriel.customcollection.ccabstract.CCAbstract;
+
+public class CCList<T> extends CCAbstract<T>{
+	ArrayList<T> localList;
+	
+	public CCList(int size) {
+		super(size);
+		localList = new ArrayList<T>(size);
+	}
+
+	@Override
+	public T getOldest() {
+	
+		return null;
+	}
+
+	@Override
+	public T getNewest() {
+		
+		return null;
+	}
+
+	@Override
+	public void add(T type) {
+		
+	}
+
+	@Override
+	public void reset() {
+		
+	}
+
+}

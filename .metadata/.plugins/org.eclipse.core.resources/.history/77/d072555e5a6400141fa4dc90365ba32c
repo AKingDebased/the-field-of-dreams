@@ -1,0 +1,35 @@
+package edu.lmu.cmsi.gabriel.customcollection.ccabstract.cclinked;
+
+import edu.lmu.cmsi.gabriel.customcollection.ccabstract.CCAbstract;
+
+public class CCLinked<T> extends CCAbstract<T> {
+
+	public CCLinked(int size) {
+		super(size);
+	}
+
+	@Override
+	public T getOldest() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public T getNewest() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void add(T type) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void reset() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

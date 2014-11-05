@@ -1,0 +1,29 @@
+package edu.lmu.cmsi.gabriel.customcollection.ccabstract.ccarray;
+
+import edu.lmu.cmsi.gabriel.customcollection.ccabstract.CCAbstract;
+
+public class CCArray<T> extends CCAbstract<T> {
+	
+	public CCArray(int size) {
+		super(size);
+	}
+	
+	public T getOldest(){
+		return null;
+	}
+	
+	public T getNewest(){
+		
+		
+		return null;
+	}
+	
+	public void add(T type){
+		
+	}
+	
+	public void reset(){
+		
+	}
+
+}

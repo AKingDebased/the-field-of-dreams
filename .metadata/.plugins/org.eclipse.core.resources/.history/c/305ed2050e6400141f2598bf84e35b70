@@ -1,0 +1,5 @@
+package edu.lmu.cmsi.gabriel.mrtcollection.abstractmrt.ccarrays;
+
+public class CCArray {
+
+}

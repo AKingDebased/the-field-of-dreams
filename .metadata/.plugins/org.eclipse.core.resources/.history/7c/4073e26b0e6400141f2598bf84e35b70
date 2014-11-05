@@ -1,0 +1,9 @@
+package edu.lmu.cmsi.gabriel.customcollection;
+
+import java.util.Iterator;
+
+public class AbstractCC<Type>{
+	private Type genericType;
+
+
+}

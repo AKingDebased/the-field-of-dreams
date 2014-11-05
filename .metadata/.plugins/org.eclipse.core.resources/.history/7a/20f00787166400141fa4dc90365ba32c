@@ -1,0 +1,7 @@
+package edu.lmu.cmsi.gabriel.customcollection.ccabstract;
+
+public abstract class CCAbstract {
+	
+	public abstract void getOldest();
+
+}

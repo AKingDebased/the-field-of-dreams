@@ -1,0 +1,12 @@
+package edu.lmu.cmsi.gabriel.customcollection.ccabstract;
+
+public abstract class CCAbstract<T> {
+	
+	public abstract T getOldest();
+	
+	public abstract T getNewest();
+	
+	public abstract void add(T type);
+	
+
+}
