@@ -36,4 +36,8 @@ public class CCList<E> extends CCAbstract<E>{
 		localList.removeAll(localList);
 	}
 	
+	private void replaceOldest(){
+		
+	}
+
 }

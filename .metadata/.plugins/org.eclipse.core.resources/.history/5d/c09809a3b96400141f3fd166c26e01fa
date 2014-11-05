@@ -24,10 +24,6 @@ public class CCList<E> extends CCAbstract<E>{
 
 	@Override
 	public void add(E type) {
-		if(type == null){
-			throw new IllegalArgumentException("null value");
-		}
-		
 		localList.add(type);
 	}
 
@@ -36,4 +32,8 @@ public class CCList<E> extends CCAbstract<E>{
 		localList.removeAll(localList);
 	}
 	
+	private void replaceOldest(){
+		
+	}
+
 }

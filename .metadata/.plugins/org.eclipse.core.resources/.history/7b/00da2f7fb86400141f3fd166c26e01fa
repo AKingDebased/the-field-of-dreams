@@ -1,0 +1,21 @@
+package edu.lmu.cmsi.gabriel.customcollection;
+
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
+import edu.lmu.cmsi.gabriel.customcollection.ccabstract.cclist.CCList;
+
+public class CCListTest {
+	
+	 @Test(expected = IllegalArgumentException.class)
+	 public void testNull() {
+		 CCList<Integer> testCCList = new CCList<Integer>(4);
+		 testCCList.add(null);
+	 }
+	 
+	 @Test
+	 public void moreThanNGetOldest(){
+		 CCList<Integer> testCCList = new CCList<Integer>(4);
+	 }
+	 
+}
