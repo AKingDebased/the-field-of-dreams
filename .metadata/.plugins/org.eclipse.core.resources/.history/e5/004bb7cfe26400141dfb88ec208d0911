@@ -1,10 +1,8 @@
 package edu.lmu.cmsi.gabriel.customcollection.ccabstract.ccarray;
 
-import java.util.Iterator;
-
 import edu.lmu.cmsi.gabriel.customcollection.ccabstract.CCAbstract;
 
-public class CCArray<E> extends CCAbstract<E> implements Iterable<E> {
+public class CCArray<E> extends CCAbstract<E> {
 	private int arrayElements = 0;
 	private Object[] localArray; 
 			
@@ -48,10 +46,6 @@ public class CCArray<E> extends CCAbstract<E> implements Iterable<E> {
 	public void reset(){
 		this.localArray = new Object[maxLength];
 		this.arrayElements = 0;
-	}
-
-	public CCArrayIterator<E> iterator() {
-		return new CCArrayIterator<E>(this.localArray);
 	}
 
 }

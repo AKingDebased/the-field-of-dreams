@@ -2,16 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="maxLength" key="selection"/>
+		<item value="CCLinked" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="testList"/>
+			<item value="CCList"/>
 			<item value="size"/>
 			<item value="mrtcollection"/>
 		</list>
 		<list key="replacehistory">
+			<item value="CCLinked"/>
+			<item value="CCArray"/>
 			<item value="maxLength"/>
 			<item value="customcollection"/>
 			<item value="customcollectipn"/>
@@ -21,7 +25,7 @@
 		<item value="263" key="DIALOG_WIDTH"/>
 		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
 		<item value="399" key="DIALOG_HEIGHT"/>
-		<item value="417" key="DIALOG_X_ORIGIN"/>
+		<item value="592" key="DIALOG_X_ORIGIN"/>
 		<item value="118" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

@@ -24,17 +24,14 @@ public class App
         	System.out.println(ccArrayIterator.next().toString());
         }
         
-        System.out.println("newest: " + testList.getNewest());
-        System.out.println("oldest: " + testList.getOldest());
+        /*System.out.println(testList.getNewest());
+        System.out.println(testList.getOldest());
         
         System.out.println("overloading CCList");
         testList.add(0);
         
-        System.out.println("current elements:");
-       
-        
-        System.out.println("newest: " + testList.getNewest());
-        System.out.println("oldest: " + testList.getOldest());
+        System.out.println(testList.getNewest());
+        System.out.println(testList.getOldest());*/
         
     }
 }

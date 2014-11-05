@@ -1,0 +1,22 @@
+package edu.lmu.cmsi.gabriel.customcollection.ccabstract.ccarray;
+
+import java.util.Iterator;
+
+public class CCArrayIterator<E> implements Iterator<E>{
+	private int position;
+	
+	public CCArrayIterator(CCArray<E> ccarray){
+		this.position = 0;
+	}
+	
+	public boolean hasNext() {
+		
+		return false;
+	}
+
+	public E next() {
+		
+		return null;
+	}
+
+}

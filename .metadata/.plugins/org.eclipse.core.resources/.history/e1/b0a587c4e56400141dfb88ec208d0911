@@ -13,7 +13,7 @@ public class CCArrayIterator<E> implements Iterator<E>{
 	}
 	
 	public boolean hasNext() {
-		if(position + 1 < array.length){
+		if(position + 1 < array.length - 1){
 			return array[position + 1] != null;
 		} else {
 			return false;

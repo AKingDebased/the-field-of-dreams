@@ -20,9 +20,9 @@ public class App
         
         System.out.println("current elements:");
         Iterator<Integer> ccArrayIterator = testList.iterator();
-        while(ccArrayIterator.hasNext()){
+       /* while(ccArrayIterator.hasNext()){
         	System.out.println(ccArrayIterator.next().toString());
-        }
+        }*/
         
         System.out.println("newest: " + testList.getNewest());
         System.out.println("oldest: " + testList.getOldest());
@@ -31,7 +31,10 @@ public class App
         testList.add(0);
         
         System.out.println("current elements:");
-       
+        Iterator<Integer> ccArrayIterator2 = testList.iterator();
+        while(ccArrayIterator2.hasNext()){
+        	System.out.println(ccArrayIterator2.next().toString());
+        }
         
         System.out.println("newest: " + testList.getNewest());
         System.out.println("oldest: " + testList.getOldest());
