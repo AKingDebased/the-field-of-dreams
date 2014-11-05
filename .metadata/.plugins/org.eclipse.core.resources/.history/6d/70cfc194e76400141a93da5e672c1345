@@ -6,7 +6,7 @@ import edu.lmu.cmsi.gabriel.customcollection.ccabstract.CCAbstract;
 
 public class CCArray<E> extends CCAbstract<E> implements Iterable<E> {
 	private int arrayElements = 0;
-	public Object[] localArray; 
+	private Object[] localArray; 
 			
 	public CCArray(int maxLength) {
 		super(maxLength);
@@ -30,17 +30,16 @@ public class CCArray<E> extends CCAbstract<E> implements Iterable<E> {
 			throw new IllegalArgumentException("null value");
 		}
 		
-		if(arrayElements < this.maxLength){
+		if(this.arrayElements < this.maxLength){
 			this.localArray[this.arrayElements] = e;
 			this.arrayElements++;
 		} else {
-			Object[] tempArray = new Object[this.maxLength];
+			this.localArray = new Object[this.maxLength];
 			
 			for(int i = 0; i < this.maxLength - 1; i++){
-				tempArray[i] = this.localArray[i+1]; //push all elements down one index
+				this.localArray[i] = this.localArray[i+1]; //push all elements down one index
 			}									 		   //also automatically overrides the oldest element
 		
-			this.localArray = tempArray;
 			this.localArray[maxLength-1] = e;
 		}
 		

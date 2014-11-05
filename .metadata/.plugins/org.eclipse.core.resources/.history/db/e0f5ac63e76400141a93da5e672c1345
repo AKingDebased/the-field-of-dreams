@@ -24,10 +24,10 @@ public class App
         	System.out.println(ccArrayIterator.next().toString());
         }
         
-        System.out.println("newest: " + testList.getNewest());
+        /*System.out.println("newest: " + testList.getNewest());
         System.out.println("oldest: " + testList.getOldest());
         
-        System.out.println("overloading CCList");
+        System.out.println("overloading CCList");*/
         testList.add(0);
         
         System.out.println("current elements:");
@@ -35,7 +35,7 @@ public class App
         while(ccArrayIterator2.hasNext()){
         	System.out.println(ccArrayIterator2.next().toString());
         }
-      
+        
         System.out.println("newest: " + testList.getNewest());
         System.out.println("oldest: " + testList.getOldest());
         

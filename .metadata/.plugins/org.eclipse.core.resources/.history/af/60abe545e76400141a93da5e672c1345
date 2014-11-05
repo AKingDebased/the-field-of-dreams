@@ -35,7 +35,7 @@ public class App
         while(ccArrayIterator2.hasNext()){
         	System.out.println(ccArrayIterator2.next().toString());
         }
-      
+        
         System.out.println("newest: " + testList.getNewest());
         System.out.println("oldest: " + testList.getOldest());
         

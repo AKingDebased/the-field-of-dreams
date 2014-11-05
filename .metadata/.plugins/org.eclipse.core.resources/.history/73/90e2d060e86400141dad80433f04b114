@@ -31,11 +31,14 @@ public class App
         testList.add(0);
         
         System.out.println("current elements:");
-        Iterator<Integer> ccArrayIterator2 = testList.iterator();
+        /*Iterator<Integer> ccArrayIterator2 = testList.iterator();
         while(ccArrayIterator2.hasNext()){
         	System.out.println(ccArrayIterator2.next().toString());
+        }*/
+        for(int i = 1; i < testList.localArray.length; i++){
+        	System.out.println(testList.localArray[i].toString());
         }
-      
+        
         System.out.println("newest: " + testList.getNewest());
         System.out.println("oldest: " + testList.getOldest());
         
