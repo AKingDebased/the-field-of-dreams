@@ -76,14 +76,17 @@ public class CCListTest {
 		assertEquals("failed - expected 0", 0, testCCList.getSize());
 	}
 	
-	/*@Test
+	@Test
 	public void iterationOrderTest(){
-		CCArray<Integer> testCCArray = new CCArray<Integer>(15);
+		CCList<Integer> testCCList = new CCList<Integer>(15);
 		
 		for(int i = 0; i < 15; i++){
-			testCCArray.add(i);
+			testCCList.add(i);
 		}
-	}*/
+		
+		
+		
+	}
 	
 	 private void fillCCList(CCList<Integer> cclist, boolean moreOrLess){
 		 if(moreOrLess == false) { //false for < N

@@ -12,15 +12,15 @@ public class CCArray<E> extends CCAbstract<E> {
 	}
 	
 	public E getOldest(){
-		return (E) this.localArray[0];
+		return (E) localArray[0];
 	}
 	
 	public E getNewest(){
-		return (E) this.localArray[this.arrayElements - 1];
+		return (E) localArray[this.arrayElements - 1];
 	}
 	
 	public int getSize(){
-		return this.arrayElements;
+		return arrayElements;
 	}
 	
 	public void add(E e){
@@ -29,23 +29,24 @@ public class CCArray<E> extends CCAbstract<E> {
 		}
 		
 		if(this.arrayElements < this.maxLength){
-			this.localArray[this.arrayElements] = e;
-			this.arrayElements++;
+			localArray[arrayElements] = e;
+			arrayElements++;
 		} else {
-			this.localArray = new Object[this.maxLength];
+			this.localArray = new Object[maxLength];
 			
-			for(int i = 0; i < this.maxLength - 1; i++){
-				this.localArray[i] = this.localArray[i+1]; //push all elements down one index
-			}									 		   //also automatically overrides the oldest element
-		
-			this.localArray[maxLength-1] = e;
+			for(int i = 0; i < maxLength; i++){
+				localArray[i] = localArray[i+1]; //push all elements down one index
+												 //also automatically overrides the oldest element
+			}
+			
+			arrayNew[length-1] = addedData;
+			array = arrayNew;
 		}
 		
 	}
 	
 	public void reset(){
-		this.localArray = new Object[maxLength];
-		this.arrayElements = 0;
+		
 	}
 
 }

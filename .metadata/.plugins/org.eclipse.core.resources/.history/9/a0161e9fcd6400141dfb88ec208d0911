@@ -29,7 +29,7 @@ public class CCArray<E> extends CCAbstract<E> {
 		}
 		
 		if(this.arrayElements < this.maxLength){
-			this.localArray[this.arrayElements] = e;
+			this.localArray[this.arrayElements-1] = e;
 			this.arrayElements++;
 		} else {
 			this.localArray = new Object[this.maxLength];

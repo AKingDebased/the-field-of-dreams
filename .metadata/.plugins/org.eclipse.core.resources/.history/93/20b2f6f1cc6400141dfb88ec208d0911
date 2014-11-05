@@ -45,7 +45,6 @@ public class CCArray<E> extends CCAbstract<E> {
 	
 	public void reset(){
 		this.localArray = new Object[maxLength];
-		this.arrayElements = 0;
 	}
 
 }

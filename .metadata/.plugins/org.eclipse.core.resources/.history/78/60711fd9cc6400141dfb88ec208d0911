@@ -34,7 +34,7 @@ public class CCArray<E> extends CCAbstract<E> {
 		} else {
 			this.localArray = new Object[this.maxLength];
 			
-			for(int i = 0; i < this.maxLength - 1; i++){
+			for(int i = 0; i < this.maxLength; i++){
 				this.localArray[i] = this.localArray[i+1]; //push all elements down one index
 			}									 		   //also automatically overrides the oldest element
 		
@@ -45,7 +45,6 @@ public class CCArray<E> extends CCAbstract<E> {
 	
 	public void reset(){
 		this.localArray = new Object[maxLength];
-		this.arrayElements = 0;
 	}
 
 }

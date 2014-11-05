@@ -39,6 +39,7 @@ public class CCArray<E> extends CCAbstract<E> {
 			}									 		   //also automatically overrides the oldest element
 		
 			this.localArray[maxLength-1] = e;
+			arrayElements++;
 		}
 		
 	}
