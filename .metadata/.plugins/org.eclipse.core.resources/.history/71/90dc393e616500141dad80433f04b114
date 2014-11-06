@@ -9,23 +9,10 @@ import edu.lmu.cmsi.gabriel.customcollection.ccabstract.cclist.CCList;
 
 public class App 
 {
-	private static CCLinked<Integer> testLinked = new CCLinked<Integer>(15);
-    private static CCArray<Integer> testArray = new CCArray<Integer>(15);
-    private static CCList<Integer> testList = new CCList<Integer>(15);
-    
-   public static void main( String[] args )
+    public static void main( String[] args )
     {
-	    fillCollections();
         forEachTest();
         iteratorTest();
-    }
-   
-    private static void fillCollections(){
-    	for(int i = 0; i < 15; i++){ //again, magic numbers, but let's not linger on that
-	    	testLinked.add(i);
-	    	testArray.add(i);
-	    	testList.add(i);
-	    }
     }
     
     private static void iteratorTest() {
@@ -34,7 +21,17 @@ public class App
 	}
 
 	private static void forEachTest(){
-    	System.out.println("cclinked elements:");
+    	CCLinked<Integer> testLinked = new CCLinked<Integer>(15);
+        CCArray<Integer> testArray = new CCArray<Integer>(15);
+        CCList<Integer> testList = new CCList<Integer>(15);
+        
+        for(int i = 0; i < 15; i++){ //again, magic numbers, but let's not linger on that
+        	testLinked.add(i);
+        	testArray.add(i);
+        	testList.add(i);
+        }
+        
+        System.out.println("cclinked elements:");
         for(Integer integer : testLinked){
         	System.out.println(integer.toString());
         }

@@ -15,17 +15,14 @@ public class App
     
    public static void main( String[] args )
     {
-	    fillCollections();
-        forEachTest();
-        iteratorTest();
-    }
-   
-    private static void fillCollections(){
-    	for(int i = 0; i < 15; i++){ //again, magic numbers, but let's not linger on that
+	   for(int i = 0; i < 15; i++){ //again, magic numbers, but let's not linger on that
 	    	testLinked.add(i);
 	    	testArray.add(i);
 	    	testList.add(i);
 	    }
+	   
+        forEachTest();
+        iteratorTest();
     }
     
     private static void iteratorTest() {
