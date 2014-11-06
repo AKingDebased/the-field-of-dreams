@@ -1,16 +1,15 @@
 ### Custom Collection
 
 * CC just stands for Custom Collection.
-* i omitted iteration unit tests.  rather, my App class features a for-each loop over all
-of my CustomCollection implementations.  twofold reasons for this: one, to test my iterator and its functionality.  two, to actually put my iterators to work, because otherwise the things would
-be rusting unburnished.
 * also i'm pretty sure this assignment was a sneaky, subtle lesson in polymorphism.  oh, mike,
 you cheeky devil.
 
 ##### on maven and compiling
 
 * you gave us the option to leave maven behind and go back to our old way of doing things.  well, 
-i went back to my old way, which is eclipse.  BUT I GOT THE MAVEN PLUG-IN BITCHES I CAN DO ANYTHING. less flippantly, you'll be able to run my program like a maven-built project because it is, in fact, a maven built project.
+i went back to my old way, which is eclipse.  BUT I GOT THE MAVEN PLUG-IN BITCHES I CAN DO ANYTHING.
+less flippantly, you'll be able to run my program like a maven-built project because it is, in fact,
+a maven built project.
 
 ##### CCAbstract (i.e., why i am using an abstract class)
 

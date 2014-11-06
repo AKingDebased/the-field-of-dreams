@@ -14,7 +14,7 @@ public class CCLinkedIterator<E> implements Iterator<E>{
 	}
 
 	public E next() {
-		return (E) currentNode.getNext();
+		return currentNode.getNext();
 	}
 	
 	public void remove(){

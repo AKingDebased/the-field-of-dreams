@@ -10,11 +10,13 @@ public class CCLinkedIterator<E> implements Iterator<E>{
 	}
 	
 	public boolean hasNext() {
-		return currentNode.getNext() != null;
+		
+		return false;
 	}
 
 	public E next() {
-		return (E) currentNode.getNext();
+		
+		return null;
 	}
 	
 	public void remove(){

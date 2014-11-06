@@ -1,0 +1,70 @@
+package edu.lmu.cmsi.gabriel.customcollection.ccabstract.cclinked;
+
+import java.util.Iterator;
+
+import edu.lmu.cmsi.gabriel.customcollection.ccabstract.CCAbstract;
+
+public class CCLinked<E> extends CCAbstract<E> implements Iterable<E>{
+	private Node<E> head;
+	private int linkedElements;
+	
+	public CCLinked(int maxLength) {
+		super(maxLength);
+		this.head = new Node<E>(null);
+		this.linkedElements = 0;
+	}
+
+	@Override
+	public E getOldest() {
+		return (E) this.head.getNext().getData();
+	}
+
+	@Override
+	public E getNewest() {
+		Node<E> currentNode = this.head;
+		
+		while(currentNode.getNext() != null){
+			currentNode = currentNode.getNext();
+		}
+		
+		return (E) currentNode.getData();
+	}
+	
+	@Override
+	public int getSize(){
+		return linkedElements;
+	}
+
+	@Override
+	public void add(E e) {
+		if (e == null){
+			throw new IllegalArgumentException();
+		}
+		
+		Node<E> newNode = new Node<E>(e);
+		Node<E> currentNode = this.head;
+		
+		while(currentNode.getNext() != null){ //it seems like Node behavior makes an iterator redundant?
+			currentNode = currentNode.getNext();
+		}
+		
+		currentNode.setNext(newNode);
+		
+		if(linkedElements > maxLength){ //overwrites oldest entry if linked allocation overloads
+			this.head = this.head.getNext();
+		} else {
+			linkedElements++;
+		}
+	}
+
+	@Override
+	public void reset() {
+		this.linkedElements = 0;
+		this.head = new Node<E>(null);
+	}
+
+	public CCLinkedIterator<E> iterator() {
+		return new CCLinkedIterator<E>(this.head);
+	}
+
+}
