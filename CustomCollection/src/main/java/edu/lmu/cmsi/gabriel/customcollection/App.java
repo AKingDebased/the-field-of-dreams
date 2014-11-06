@@ -9,7 +9,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        CCList<Integer> testList = new CCList<Integer>(5);
+        CCArray<Integer> testList = new CCArray<Integer>(5);
         
         testList.add(1);
         testList.add(2);

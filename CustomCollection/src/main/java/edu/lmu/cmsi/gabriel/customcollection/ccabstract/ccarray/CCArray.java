@@ -5,12 +5,13 @@ import java.util.Iterator;
 import edu.lmu.cmsi.gabriel.customcollection.ccabstract.CCAbstract;
 
 public class CCArray<E> extends CCAbstract<E> implements Iterable<E> {
-	private int arrayElements = 0;
+	private int arrayElements;
 	public Object[] localArray; 
 			
 	public CCArray(int maxLength) {
 		super(maxLength);
 		localArray = new Object[maxLength];
+		arrayElements = 0;
 	}
 	
 	public E getOldest(){

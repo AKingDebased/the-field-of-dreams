@@ -1,6 +1,6 @@
 package edu.lmu.cmsi.gabriel.customcollection.ccabstract.ccarray;
 
-import java.util.Iterator;
+import java.util.Iterator;                  
 import java.util.NoSuchElementException;
 
 public class CCArrayIterator<E> implements Iterator<E>{
@@ -27,5 +27,9 @@ public class CCArrayIterator<E> implements Iterator<E>{
 			position++;
 			return (E) array[position];
 		}
+	}
+	
+	public void remove(){
+		throw new UnsupportedOperationException("remove operation not supported .");
 	}
 }

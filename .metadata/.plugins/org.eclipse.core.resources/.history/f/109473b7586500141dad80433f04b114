@@ -1,0 +1,49 @@
+package edu.lmu.cmsi.gabriel.customcollection.ccabstract.cclinked;
+
+import java.util.Iterator;
+
+import edu.lmu.cmsi.gabriel.customcollection.ccabstract.CCAbstract;
+
+public class CCLinked<E> extends CCAbstract<E> implements Iterable<E>{
+	private Node<E> head;
+	private int index;
+	
+	public CCLinked(int maxLength) {
+		super(maxLength);
+		this.head = new Node(null);
+		this.index = 0;
+	}
+
+	@Override
+	public E getOldest() {
+		return (E) this.head.getNext();
+	}
+
+	@Override
+	public E getNewest() {
+		return null;
+	}
+	
+	@Override
+	public int getSize(){
+		return 1;
+	}
+
+	@Override
+	public void add(E node) {
+		
+		
+	}
+
+	@Override
+	public void reset() {
+		this.index = 0;
+		this.head = new Node(null);
+		
+	}
+
+	public CCLinkedIterator<E> iterator() {
+		return new CCLinkedIterator<E>(this.head);
+	}
+
+}
