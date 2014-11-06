@@ -28,7 +28,19 @@ public class App
 	    }
     }
     
-    private static void forEachTest(){
+    private static void iteratorTest() 
+        Iterator<Integer> ccLinkedIterator = testLinked.iterator();
+    	Iterator<Integer> ccArrayIterator = testArray.iterator();
+    	Iterator<Integer> ccListIterator = testList.iterator();
+    	
+    	System.out.println();
+    	while(ccLIterator.hasNext()){
+    		
+    	}
+		
+	}
+
+	private static void forEachTest(){
     	System.out.println("cclinked elements:");
         for(Integer integer : testLinked){
         	System.out.println(integer.toString());
@@ -44,29 +56,5 @@ public class App
         	System.out.println(integer.toString());
         }
     	
-    }
-    
-    private static void iteratorTest(){ 
-        Iterator<Integer> ccLinkedIterator = testLinked.iterator();
-    	Iterator<Integer> ccArrayIterator = testArray.iterator();
-    	Iterator<Integer> ccListIterator = testList.iterator();
-    	
-    	System.out.println("\nCCLinkedIterator results: ");
-    	while(ccLinkedIterator.hasNext()){
-    		Integer currentInteger = ccLinkedIterator.next();
-    		System.out.println(currentInteger.toString());
-    	}
-    	
-    	System.out.println("\nCCArrayIterator results: ");
-    	while(ccArrayIterator.hasNext()){
-    		Integer currentInteger = ccArrayIterator.next();
-    		System.out.println(currentInteger.toString());
-    	}
-    	
-    	System.out.println("\nCCListIterator results: ");
-    	while(ccListIterator.hasNext()){
-    		Integer currentInteger = ccListIterator.next();
-    		System.out.println(currentInteger.toString());
-    	}
     }
 }

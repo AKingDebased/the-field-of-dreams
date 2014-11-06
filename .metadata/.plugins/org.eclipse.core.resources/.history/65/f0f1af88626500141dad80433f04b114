@@ -16,7 +16,7 @@ public class App
    public static void main( String[] args )
     {
 	    fillCollections();
-	    forEachTest();
+	    //forEachTest();
         iteratorTest();
     }
    
@@ -28,30 +28,12 @@ public class App
 	    }
     }
     
-    private static void forEachTest(){
-    	System.out.println("cclinked elements:");
-        for(Integer integer : testLinked){
-        	System.out.println(integer.toString());
-        }
-        
-        System.out.println("\nccarray elements:");
-        for(Integer integer : testArray){
-        	System.out.println(integer.toString());
-        }
-        
-        System.out.println("\ncclist elements:");
-        for(Integer integer : testList){
-        	System.out.println(integer.toString());
-        }
-    	
-    }
-    
     private static void iteratorTest(){ 
         Iterator<Integer> ccLinkedIterator = testLinked.iterator();
     	Iterator<Integer> ccArrayIterator = testArray.iterator();
     	Iterator<Integer> ccListIterator = testList.iterator();
     	
-    	System.out.println("\nCCLinkedIterator results: ");
+    	System.out.println("CCLinkedIterator results: ");
     	while(ccLinkedIterator.hasNext()){
     		Integer currentInteger = ccLinkedIterator.next();
     		System.out.println(currentInteger.toString());
@@ -68,5 +50,23 @@ public class App
     		Integer currentInteger = ccListIterator.next();
     		System.out.println(currentInteger.toString());
     	}
+    }
+
+	private static void forEachTest(){
+    	System.out.println("cclinked elements:");
+        for(Integer integer : testLinked){
+        	System.out.println(integer.toString());
+        }
+        
+        System.out.println("\nccarray elements:");
+        for(Integer integer : testArray){
+        	System.out.println(integer.toString());
+        }
+        
+        System.out.println("\ncclist elements:");
+        for(Integer integer : testList){
+        	System.out.println(integer.toString());
+        }
+    	
     }
 }
