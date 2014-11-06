@@ -5,7 +5,7 @@ import java.util.ListIterator;
 
 import edu.lmu.cmsi.gabriel.customcollection.ccabstract.CCAbstract;
 
-public class CCList<E> extends CCAbstract<E> implements Iterable<E>{
+public class CCList<E> extends CCAbstract<E>{
 	public LinkedList<E> localList;
 	
 	public CCList(int maxLength) {

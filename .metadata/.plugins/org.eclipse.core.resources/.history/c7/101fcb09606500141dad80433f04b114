@@ -1,7 +1,6 @@
 package edu.lmu.cmsi.gabriel.customcollection.ccabstract.cclinked;
 
 import java.util.Iterator;
-import java.util.NoSuchElementException;
 
 public class CCLinkedIterator<E> implements Iterator<E>{
 	private Node<E> currentNode;
@@ -15,12 +14,7 @@ public class CCLinkedIterator<E> implements Iterator<E>{
 	}
 
 	public E next() {
-		if(!hasNext()){
-			throw new NoSuchElementException("no further elements");
-		} else {
-			this.currentNode = this.currentNode.getNext();
-			return this.currentNode.getData();
-		}
+		return currentNode.getNext().getData();
 	}
 	
 	public void remove(){

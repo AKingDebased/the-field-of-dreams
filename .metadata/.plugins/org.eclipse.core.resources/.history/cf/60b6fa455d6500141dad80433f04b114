@@ -36,7 +36,3 @@ a `getMaxLength()` method that would only be used for testing purposes.
 ##### on iterators
 
 * `CCList` does not have an associated `CCListIterator` class.  this is on account of `CCList` being based on an ArrayList, which comes with a perfectly serviceable iterator by the boys behind Java.
-
-#### lingering questions
-
-* how useful are iterators in everyday application?  is not more efficient to simply use a for-each loop when accessing collection elements?
