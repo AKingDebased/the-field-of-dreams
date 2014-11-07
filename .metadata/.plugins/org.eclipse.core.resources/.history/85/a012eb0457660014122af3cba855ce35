@@ -18,17 +18,11 @@ public final class SymbolBalancer {
 					symbolStack.push(ch);
 					break;
 				case ')':
-					if(symbolStack.removeFirstOccurrence('(')){
-						break;
-					} else {
-						return false;
-					}
+					symbolStack.removeFirstOccurrence('(');
+					break;
 				case ']':
-					if(symbolStack.removeFirstOccurrence('[')){
-						break;
-					} else {
-						return false;
-					}
+					symbolStack.removeFirstOccurrence('[');
+					break;
 			}
 		}
 		return symbolStack.isEmpty();

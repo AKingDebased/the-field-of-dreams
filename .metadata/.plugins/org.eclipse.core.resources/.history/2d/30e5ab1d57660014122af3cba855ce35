@@ -24,11 +24,8 @@ public final class SymbolBalancer {
 						return false;
 					}
 				case ']':
-					if(symbolStack.removeFirstOccurrence('[')){
-						break;
-					} else {
-						return false;
-					}
+					symbolStack.removeFirstOccurrence('[');
+					break;
 			}
 		}
 		return symbolStack.isEmpty();
