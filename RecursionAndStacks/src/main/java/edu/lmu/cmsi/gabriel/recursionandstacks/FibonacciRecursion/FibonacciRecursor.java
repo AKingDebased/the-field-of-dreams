@@ -1,4 +1,4 @@
-package edu.lmu.cmsi.gabriel.recursionandstacks.FibonacciRecursion;
+package edu.lmu.cmsi.gabriel.recursionandstacks.fibonaccirecursion;
 
 public class FibonacciRecursor {
 
