@@ -8,4 +8,7 @@
 <fullyQualifiedTypeName name="edu.lmu.cmsi.gabriel.customcollection.ccabstract.cclinked.CCLinked"/>
 <fullyQualifiedTypeName name="edu.lmu.cmsi.gabriel.customcollection.ccabstract.CCAbstract"/>
 <fullyQualifiedTypeName name="edu.lmu.cmsi.gabriel.customcollection.ccabstract.cclinked.Node"/>
+<fullyQualifiedTypeName name="java.util.Deque"/>
+<fullyQualifiedTypeName name="java.util.ArrayDeque"/>
+<fullyQualifiedTypeName name="edu.lmu.cmsi.gabriel.recursionandstacks.symbolbalancer.SymbolBalancer"/>
 </qualifiedTypeNameHistroy>

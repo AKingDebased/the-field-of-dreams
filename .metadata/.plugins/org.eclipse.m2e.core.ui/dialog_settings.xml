@@ -60,6 +60,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="edu.lmu.cmsi.gabriel.recursionandstacks"/>
 			<item value="edu.lmu.cmsi.gabriel.recursionandthestack"/>
 			<item value="edu.lmu.cmsi.gabriel.customcollection"/>
 			<item value="edu.lmu.cmsi.gabriel.mrtcollection"/>
@@ -68,6 +69,7 @@
 			<item value="edu.lmu.cmsi.gabriel"/>
 		</list>
 		<list key="artifactId">
+			<item value="recursionandstacks"/>
 			<item value="recursionandthestack"/>
 			<item value="customcollection"/>
 			<item value="mrtcollection"/>
