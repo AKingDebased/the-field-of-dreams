@@ -22,6 +22,29 @@
 <entry path="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed"/>
 </endorsedDirs>
 </libraryInfo>
+<libraryInfo home="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home" version="1.8.0_20">
+<bootpath>
+<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/resources.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/rt.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/sunrsasign.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/jsse.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/jce.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/charsets.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/jfr.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="/Users/gabrielgonzalvez/Library/Java/Extensions"/>
+<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/ext"/>
+<entry path="/Library/Java/Extensions"/>
+<entry path="/Network/Library/Java/Extensions"/>
+<entry path="/System/Library/Java/Extensions"/>
+<entry path="/usr/lib/java"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
 <libraryInfo home="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home" version="1.8.0_05">
 <bootpath>
 <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar"/>
@@ -43,6 +66,25 @@
 </extensionDirs>
 <endorsedDirs>
 <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files\Java\jre7" version="1.7.0_11">
+<bootpath>
+<entry path="C:\Program Files\Java\jre7\lib\resources.jar"/>
+<entry path="C:\Program Files\Java\jre7\lib\rt.jar"/>
+<entry path="C:\Program Files\Java\jre7\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files\Java\jre7\lib\jsse.jar"/>
+<entry path="C:\Program Files\Java\jre7\lib\jce.jar"/>
+<entry path="C:\Program Files\Java\jre7\lib\charsets.jar"/>
+<entry path="C:\Program Files\Java\jre7\lib\jfr.jar"/>
+<entry path="C:\Program Files\Java\jre7\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\Java\jre7\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\Java\jre7\lib\endorsed"/>
 </endorsedDirs>
 </libraryInfo>
 <libraryInfo home="/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home" version="1.7.0_45">
@@ -67,29 +109,6 @@
 </extensionDirs>
 <endorsedDirs>
 <entry path="/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/lib/endorsed"/>
-</endorsedDirs>
-</libraryInfo>
-<libraryInfo home="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home" version="1.8.0_20">
-<bootpath>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/resources.jar"/>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/rt.jar"/>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/sunrsasign.jar"/>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/jsse.jar"/>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/jce.jar"/>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/charsets.jar"/>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/jfr.jar"/>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/classes"/>
-</bootpath>
-<extensionDirs>
-<entry path="/Users/gabrielgonzalvez/Library/Java/Extensions"/>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/ext"/>
-<entry path="/Library/Java/Extensions"/>
-<entry path="/Network/Library/Java/Extensions"/>
-<entry path="/System/Library/Java/Extensions"/>
-<entry path="/usr/lib/java"/>
-</extensionDirs>
-<endorsedDirs>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/endorsed"/>
 </endorsedDirs>
 </libraryInfo>
 </libraryInfos>

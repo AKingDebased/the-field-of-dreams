@@ -2,6 +2,7 @@ package edu.lmu.cmsi.gabriel.recursionandstacks.symbolbalancer;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.NoSuchElementException;
 
 public final class SymbolBalancer {
 	
@@ -9,27 +10,31 @@ public final class SymbolBalancer {
 		Deque<Character> symbolStack = new ArrayDeque<Character>();
 		char[] stringChars = string.toCharArray();
 		
-		for(char ch : stringChars){
-			switch(ch){
-				case '(':
-					symbolStack.push(ch);
-					break;
-				case '[':
-					symbolStack.push(ch);
-					break;
-				case ')':
-					if(symbolStack.pop() == '('){
+		try{
+			for(char ch : stringChars){
+				switch(ch){
+					case '(':
+						symbolStack.push(ch);
 						break;
-					} else {
-						return false;
-					}
-				case ']':
-					if(symbolStack.pop() == '['){
+					case '[':
+						symbolStack.push(ch);
 						break;
-					} else {
-						return false;
-					}
+					case ')':
+						if(symbolStack.pop() == '('){
+							break;
+						} else {
+							return false;
+						}
+					case ']':
+						if(symbolStack.pop() == '['){
+							break;
+						} else {
+							return false;
+						}
+				}
 			}
+		} catch (NoSuchElementException e){ //catches case of closing symbol with empty stack
+			return false;
 		}
 		return symbolStack.isEmpty();
 	}
