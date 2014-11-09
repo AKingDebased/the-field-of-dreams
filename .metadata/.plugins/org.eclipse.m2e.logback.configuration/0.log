@@ -2367,3 +2367,31 @@ org.apache.maven.archetype.old.ArchetypeTemplateProcessingException: Directory r
 2014-11-07 01:33:28,650 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/main/resources
 2014-11-07 01:33:28,651 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2014-11-07 01:33:28,651 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/test/resources
+2014-11-08 21:06:38,666 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-08 21:06:38,711 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/main/resources
+2014-11-08 21:06:38,714 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-08 21:06:38,714 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/CustomCollection/src/test/resources
+2014-11-08 21:06:39,178 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-08 21:06:39,179 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/main/resources
+2014-11-08 21:06:39,181 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-08 21:06:39,181 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/test/resources
+2014-11-08 21:08:01,516 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-08 21:08:01,517 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/main/resources
+2014-11-08 21:08:01,519 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-08 21:08:01,519 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/test/resources
+2014-11-08 21:08:36,039 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-08 21:08:36,039 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/main/resources
+2014-11-08 21:08:36,041 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-08 21:08:36,041 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/test/resources
+2014-11-08 21:08:57,274 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-08 21:08:57,274 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/main/resources
+2014-11-08 21:08:57,276 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-08 21:08:57,276 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/test/resources
+2014-11-08 21:09:09,386 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-08 21:09:09,386 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/main/resources
+2014-11-08 21:09:09,388 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-08 21:09:09,388 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/test/resources
+2014-11-08 21:09:19,982 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-08 21:09:19,982 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/main/resources
+2014-11-08 21:09:19,984 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-08 21:09:19,984 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/test/resources
