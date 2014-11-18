@@ -14,6 +14,8 @@ public class SymbolBalancerTest {
 		assertEquals("expected true", true, SymbolBalancer.isBalanced("[]()"));
 		assertEquals("expected true", true, SymbolBalancer.isBalanced("[()]"));
 		assertEquals("expected true", true, SymbolBalancer.isBalanced("([])"));
+		
+		
 	}
 	
 	@Test 
@@ -23,6 +25,5 @@ public class SymbolBalancerTest {
 		assertEquals("expected false", false, SymbolBalancer.isBalanced("]["));
 		assertEquals("expected false", false, SymbolBalancer.isBalanced("())"));
 		assertEquals("expected false", false, SymbolBalancer.isBalanced("[]]"));
-		assertEquals("expected false", false, SymbolBalancer.isBalanced("[(])]("));
 	}
 }
