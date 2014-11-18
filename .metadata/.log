@@ -1608,3 +1608,6 @@ java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfigu
 
 !ENTRY org.eclipse.ui 4 4 2014-11-17 18:04:21.962
 !MESSAGE Conflicting handlers for org.eclipse.ui.file.print: {ActionHandler(org.eclipse.ui.texteditor.TextOperationAction@59aa07cf)} vs {ActionHandler(org.eclipse.ui.texteditor.AbstractDecoratedTextEditor$12@673f8424)}
+
+!ENTRY org.eclipse.ui 4 4 2014-11-17 18:16:02.884
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.print: {ActionHandler(org.eclipse.ui.texteditor.TextOperationAction@59aa07cf)} vs {ActionHandler(org.eclipse.ui.texteditor.AbstractDecoratedTextEditor$12@673f8424)}
