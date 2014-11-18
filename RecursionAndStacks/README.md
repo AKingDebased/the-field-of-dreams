@@ -4,4 +4,6 @@
 
 ##### SymbolBalancer.java
 
+*  `SymbolBalancer.java` has been declared as final, and `isBalanced` is static.  i figured there is no need to instantiate an instance of SymbolBalancer, and so, static. 
+
 * in the case of a closing symbol calling a pop over an empty stack, `SymbolBalancer` will throw a `NoSuchElementException`.  to handle this case, a try-catch block has been implemented that immediately returns false if ever a closing symbol tries to pop an empty stack.

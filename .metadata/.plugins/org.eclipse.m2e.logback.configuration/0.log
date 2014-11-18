@@ -2741,3 +2741,45 @@ org.eclipse.core.runtime.CoreException: Launch configuration CCListTest referenc
 2014-11-08 23:40:22,634 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Gabriel\Documents\GitHub\the-field-of-dreams\RecursionAndStacks\src\main\resources
 2014-11-08 23:40:22,637 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2014-11-08 23:40:22,640 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Gabriel\Documents\GitHub\the-field-of-dreams\RecursionAndStacks\src\test\resources
+2014-11-17 16:37:06,120 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.lmu.cmsi.gabriel:recursionandstacks:0.0.1-SNAPSHOT @ /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/pom.xml.
+2014-11-17 16:37:06,631 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-17 16:37:06,632 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/main/resources
+2014-11-17 16:37:06,635 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-17 16:37:06,635 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/test/resources
+2014-11-17 16:37:07,299 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.lmu.cmsi.gabriel:recursionandstacks:0.0.1-SNAPSHOT @ /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/pom.xml.
+2014-11-17 16:37:07,950 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-17 16:37:07,951 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/main/resources
+2014-11-17 16:37:07,953 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-17 16:37:07,953 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/test/resources
+2014-11-17 16:37:37,791 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-17 16:37:37,791 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/main/resources
+2014-11-17 16:37:37,793 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-17 16:37:37,793 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/test/resources
+2014-11-17 16:39:36,234 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-17 16:39:36,235 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/main/resources
+2014-11-17 16:39:36,237 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-17 16:39:36,237 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/test/resources
+2014-11-17 16:39:42,179 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-17 16:39:42,179 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/main/resources
+2014-11-17 16:39:42,181 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-17 16:39:42,181 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/test/resources
+2014-11-17 18:02:42,428 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-17 18:02:42,428 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/main/resources
+2014-11-17 18:02:42,430 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-17 18:02:42,430 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/test/resources
+2014-11-17 18:02:58,499 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-17 18:02:58,499 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/main/resources
+2014-11-17 18:02:58,501 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-17 18:02:58,501 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/test/resources
+2014-11-17 18:03:24,350 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-17 18:03:24,350 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/main/resources
+2014-11-17 18:03:24,353 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-17 18:03:24,353 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/test/resources
+2014-11-17 18:08:51,786 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-17 18:08:51,787 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/main/resources
+2014-11-17 18:08:51,789 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-17 18:08:51,789 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/test/resources
+2014-11-17 18:09:15,353 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-17 18:09:15,353 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/main/resources
+2014-11-17 18:09:15,354 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-11-17 18:09:15,354 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/RecursionAndStacks/src/test/resources
