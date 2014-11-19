@@ -16,4 +16,4 @@
 
 ##### FibonacciRecursor.java
 
-* the recursions are along the fibonacci sequence are 0 indexed.  e.g., if you pass in 3 as a parameter, you will receive the fourth fibonacci number, 2.
+* this is a "static class", same as `SymbolBalancer.java`.  there's no need for an instance of FibonacciRecusor before its methods can be used.

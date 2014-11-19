@@ -1,0 +1,14 @@
+package edu.lmu.cmsi.gabriel.recursionandstacks;
+
+import org.junit.Test;
+import edu.lmu.cmsi.gabriel.recursionandstacks.recursivemultiplier.RecursiveMultiplier;
+
+public class RecursiveMultiplierTest {
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testNegativeArguments(){
+		RecursiveMultiplier.multiply(-1,1);
+		RecursiveMultiplier.multiply(1, -1);
+		
+	}
+}
