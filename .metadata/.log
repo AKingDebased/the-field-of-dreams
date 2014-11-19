@@ -2518,3 +2518,6 @@ java.lang.ArrayIndexOutOfBoundsException: 12
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 4 2014-11-18 21:55:13.378
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.print: {ActionHandler(org.eclipse.ui.texteditor.AbstractDecoratedTextEditor$12@78af3e88)} vs {ActionHandler(org.eclipse.ui.texteditor.TextOperationAction@706d36ac)}

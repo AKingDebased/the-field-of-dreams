@@ -8,9 +8,10 @@
 
 ##### on static classes
 
-* every class here is static and final. there's pretty much no need to instantiate them before using their methods, nor is there any need for extension, hence, static and final.
+* every class here is static and final. there's pretty much no need to instantiate them before using their methods, hence, static.
 
 ##### SymbolBalancer.java
+
 
 * in the case of a closing symbol calling a pop over an empty stack, `SymbolBalancer` will throw a `NoSuchElementException`.  to handle this case, a try-catch block has been implemented that immediately returns false if ever a closing symbol tries to pop an empty stack.
 
