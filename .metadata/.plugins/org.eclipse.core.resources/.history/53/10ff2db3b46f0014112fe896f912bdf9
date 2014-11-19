@@ -4,7 +4,7 @@ public final class FibonacciRecursor {
 	
 	public static int fibonacci(int n)  {
 		if(n < 0){
-			throw new IllegalArgumentException("argument must be positive whole number");
+			throw new IllegalArgumentException();
 		}
 	    if(n == 0){
 	        return 0;

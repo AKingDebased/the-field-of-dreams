@@ -1,0 +1,13 @@
+package edu.lmu.cmsi.gabriel.recursionandstacks;
+
+import edu.lmu.cmsi.gabriel.recursionandstacks.recursivestringtoint.RecursiveStringToInt;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println("life is short and pleasures few");  
+        
+        System.out.println(RecursiveStringToInt.stringToInt("200"));
+    }
+}

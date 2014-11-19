@@ -6,7 +6,7 @@ public class RecursiveStringToInt {
 			return 0;
 		}
 	
-		int startingNumber = Character.getNumericValue( input.charAt(input.length()-1) );
-		return startingNumber + 10 * stringToInt(input.substring(0, input.length() > 1 ? input.length() - 1 : 0));
+		int rootNum = Character.getNumericValue( input.charAt(input.length()-1) );
+		return rootNum + 10 * stringToInt(input.substring(0, input.length() > 1 ? input.length() - 1 : 0));
 	}
 }

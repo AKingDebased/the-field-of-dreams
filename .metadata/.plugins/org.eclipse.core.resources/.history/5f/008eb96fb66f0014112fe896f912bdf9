@@ -6,8 +6,9 @@ import edu.lmu.cmsi.gabriel.recursionandstacks.recursivestringtoint.RecursiveStr
 
 public class RecursiveStringToIntTest {
 
+	@Test(expected = IllegalArgumentException.class)
 	public void testEmptyString(){
-		assertEquals("false - expected 0", 0, RecursiveStringToInt.stringToInt(""));
+		RecursiveStringToInt.stringToInt("");
 	}
 	
 	@Test

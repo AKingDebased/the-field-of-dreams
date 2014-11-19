@@ -3,7 +3,7 @@ package edu.lmu.cmsi.gabriel.recursionandstacks.recursivestringtoint;
 public class RecursiveStringToInt {
 	public static int stringToInt (String input){
 		if (input.equals("")){
-			return 0;
+			return 0
 		}
 	
 		int startingNumber = Character.getNumericValue( input.charAt(input.length()-1) );
