@@ -1,0 +1,15 @@
+package edu.lmu.cmsi.gabriel.recursionandstacks.recursivemultiplier;
+
+public class RecursiveMultiplier {
+	
+	public static int multiply(int inputOne, int inputTwo) {
+		if (inputOne < 0 || inputTwo < 0) {
+			throw new IllegalArgumentException("Inputs must be non-negative");
+		} else if (inputOne == 0 || inputTwo == 0) {
+			return 0;
+		}
+		
+		inputTwo--;
+		return inputOne + multiply(inputOne, inputTwo);
+	}
+}

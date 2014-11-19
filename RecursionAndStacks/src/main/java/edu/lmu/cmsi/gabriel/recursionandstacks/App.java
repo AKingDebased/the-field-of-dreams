@@ -1,5 +1,6 @@
 package edu.lmu.cmsi.gabriel.recursionandstacks;
 
+import edu.lmu.cmsi.gabriel.recursionandstacks.recursivemultiplier.RecursiveMultiplier;
 import edu.lmu.cmsi.gabriel.recursionandstacks.symbolbalancer.SymbolBalancer;
 
 /**
@@ -10,6 +11,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println(SymbolBalancer.isBalanced("(()[])[]"));    
+        System.out.println(SymbolBalancer.isBalanced("(()[])[]"));  
+        System.out.println(RecursiveMultiplier.multiply(4, 4));
     }
 }
