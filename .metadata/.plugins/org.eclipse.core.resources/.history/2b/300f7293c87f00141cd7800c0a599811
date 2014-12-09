@@ -1,9 +1,7 @@
 package edu.lmu.cmsi.tree;
 
-import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Queue;
 
 import edu.lmu.cmsi.tree.exception.DuplicateItemException;
 import edu.lmu.cmsi.tree.exception.ItemNotFoundException;
@@ -137,7 +135,9 @@ public class IntegerBinarySearchTree {
 	 * @return an array of Integers, or empty if the tree is empty.
 	 */
 	public Integer[] toInOrder() {
-		if(root == null) return EMPTY_TREE;
+		if(root == null){
+			return EMPTY_TREE;
+		}
 		
 		ArrayList<Integer> valueList = new ArrayList<Integer>();
 		
@@ -165,7 +165,9 @@ public class IntegerBinarySearchTree {
 	 * @return an array of Integers, or empty if the tree is empty.
 	 */
 	public Integer[] toPostOrder() {
-		if(root == null) return EMPTY_TREE;
+		if(root == null){
+			return EMPTY_TREE;
+		}
 		
 		ArrayList<Integer> valueList = new ArrayList<Integer>();
 		
@@ -192,28 +194,6 @@ public class IntegerBinarySearchTree {
 	 * @return an array of Integers, or empty if the tree is empty.
 	 */
 	public Integer[] toBreadthFirstOrder() {
-		 if (root == null) return EMPTY_TREE;
-		 
-		 ArrayList<Integer> valueList = new ArrayList<Integer>();
-		 BinaryTreeNode node = new BinaryTreeNode(0);
-		 Queue<BinaryTreeNode> breadthQueue = new ArrayDeque<BinaryTreeNode>();
-		 
-		 breadthQueue.add(root);
-		 
-		 while(breadthQueue.size() > 0)
-		{
-			 node = breadthQueue.remove();
-			 valueList.add(node.getValue());
-			 
-			 if (node.getLeft() != null){
-				 breadthQueue.add(node.getLeft());
-			 }
-			 
-			 if (node.getRight() != null){
-				 breadthQueue.add(node.getRight());
-			 }
-		 }
-		 
-		 return valueList.toArray(new Integer[valueList.size()]);
+		throw new UnsupportedOperationException("toBreadthFirstOrder needs to be implemented");
 	}
 }
