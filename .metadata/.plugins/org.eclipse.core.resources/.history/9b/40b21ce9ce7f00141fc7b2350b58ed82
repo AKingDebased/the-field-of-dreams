@@ -10,7 +10,7 @@ import edu.lmu.cmsi.tree.exception.ItemNotFoundException;
 import edu.lmu.cmsi.tree.node.BinaryTreeNode;
 
 public class IntegerBinarySearchTree {
-	private static Integer[] EMPTY_TREE = {}; //gross kludge solution for empty trees
+	private static Integer[] EMPTY_TREE = {};
 	protected BinaryTreeNode root;
 
 	public IntegerBinarySearchTree() {
@@ -32,7 +32,7 @@ public class IntegerBinarySearchTree {
 			insert(x,root);
 		}
 	}
-	//overloaded private method for recursively finding an empty branch
+	
 	private void insert(int value, BinaryTreeNode currentNode){
 		if(value < currentNode.getValue()){
 			if(currentNode.getLeft() != null){
@@ -63,7 +63,7 @@ public class IntegerBinarySearchTree {
 			return recursiveSmallestValue(root);
 		} throw new ItemNotFoundException("tree must have elements");
 	}
-	//recursively move down left branches of tree
+	
 	private int recursiveSmallestValue(BinaryTreeNode currentNode){
 		if(currentNode.getLeft() == null){
 			return currentNode.getValue();
@@ -84,7 +84,7 @@ public class IntegerBinarySearchTree {
 			return recursiveLargestValue(root);
 		} throw new ItemNotFoundException("tree must have elements");
 	}
-	//recursively move down branches of tree
+	
 	private int recursiveLargestValue(BinaryTreeNode currentNode){
 		if(currentNode.getRight() == null){
 			return currentNode.getValue();
@@ -108,7 +108,7 @@ public class IntegerBinarySearchTree {
 	 * @return an array of Integers, or empty if the tree is empty.
 	 */
 	public Integer[] toPreOrder() {
-		if(root == null){ //gross kludge solution for empty trees
+		if(root == null){
 			return EMPTY_TREE;
 		}
 		
@@ -119,8 +119,6 @@ public class IntegerBinarySearchTree {
 		return valueList.toArray(new Integer[valueList.size()]);
 	}
 	
-	
-	//does the actual pre order recursion algorithm
 	private void recursivePreOrder(ArrayList<Integer> valueList, BinaryTreeNode currentNode){
 		valueList.add(currentNode.getValue());
 		
@@ -149,7 +147,6 @@ public class IntegerBinarySearchTree {
 		return valueList.toArray(new Integer[valueList.size()]);
 	}
 	
-	//does the actual in order recursion algorithm
 	private void recursiveInOrder(ArrayList<Integer> valueList, BinaryTreeNode currentNode){
 		if(currentNode.getLeft() != null){
 			recursiveInOrder(valueList, currentNode.getLeft());
@@ -177,7 +174,6 @@ public class IntegerBinarySearchTree {
 		return valueList.toArray(new Integer[valueList.size()]);
 	}
 	
-	//does the actual post order recursion algorithm
 	private void recursivePostOrder(ArrayList<Integer> valueList, BinaryTreeNode currentNode){
 		if(currentNode.getLeft() != null){
 			recursivePostOrder(valueList, currentNode.getLeft());
@@ -199,7 +195,7 @@ public class IntegerBinarySearchTree {
 		 if (root == null) return EMPTY_TREE;
 		 
 		 ArrayList<Integer> valueList = new ArrayList<Integer>();
-		 BinaryTreeNode node = root; //always start at root
+		 BinaryTreeNode node = root;
 		 Queue<BinaryTreeNode> breadthQueue = new ArrayDeque<BinaryTreeNode>();
 		 
 		 breadthQueue.add(node);

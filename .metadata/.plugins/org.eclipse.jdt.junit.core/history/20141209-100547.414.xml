@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="IntegerBinarySearchTreeTest" project="IntegerBinarySearchTree" tests="16" started="16" failures="0" errors="0" ignored="0">
+  <testsuite name="edu.lmu.cmsi.tree.IntegerBinarySearchTreeTest" time="0.001">
+    <testcase name="basicInsertTest" classname="edu.lmu.cmsi.tree.IntegerBinarySearchTreeTest" time="0.0"/>
+    <testcase name="findLargestValueNotFoundTest" classname="edu.lmu.cmsi.tree.IntegerBinarySearchTreeTest" time="0.0"/>
+    <testcase name="postOrderEmptyTest" classname="edu.lmu.cmsi.tree.IntegerBinarySearchTreeTest" time="0.001"/>
+    <testcase name="postOrderTest" classname="edu.lmu.cmsi.tree.IntegerBinarySearchTreeTest" time="0.0"/>
+    <testcase name="findSmallestValueNotFoundTest" classname="edu.lmu.cmsi.tree.IntegerBinarySearchTreeTest" time="0.0"/>
+    <testcase name="inOrderEmptyTest" classname="edu.lmu.cmsi.tree.IntegerBinarySearchTreeTest" time="0.0"/>
+    <testcase name="containsFoundTest" classname="edu.lmu.cmsi.tree.IntegerBinarySearchTreeTest" time="0.0"/>
+    <testcase name="preOrderEmptyTest" classname="edu.lmu.cmsi.tree.IntegerBinarySearchTreeTest" time="0.0"/>
+    <testcase name="breadthFirstOrderTest" classname="edu.lmu.cmsi.tree.IntegerBinarySearchTreeTest" time="0.0"/>
+    <testcase name="breadthFirstOrderEmptyTest" classname="edu.lmu.cmsi.tree.IntegerBinarySearchTreeTest" time="0.0"/>
+    <testcase name="findLargestValueTest" classname="edu.lmu.cmsi.tree.IntegerBinarySearchTreeTest" time="0.0"/>
+    <testcase name="findSmallestValueTest" classname="edu.lmu.cmsi.tree.IntegerBinarySearchTreeTest" time="0.0"/>
+    <testcase name="insertDuplicateTest" classname="edu.lmu.cmsi.tree.IntegerBinarySearchTreeTest" time="0.0"/>
+    <testcase name="containsNotFoundTest" classname="edu.lmu.cmsi.tree.IntegerBinarySearchTreeTest" time="0.0"/>
+    <testcase name="inOrderTest" classname="edu.lmu.cmsi.tree.IntegerBinarySearchTreeTest" time="0.0"/>
+    <testcase name="preOrderTest" classname="edu.lmu.cmsi.tree.IntegerBinarySearchTreeTest" time="0.0"/>
+  </testsuite>
+</testrun>
