@@ -1,7 +1,6 @@
 package edu.lmu.cmsi.tree;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 import edu.lmu.cmsi.tree.exception.DuplicateItemException;
 import edu.lmu.cmsi.tree.exception.ItemNotFoundException;
@@ -24,28 +23,10 @@ public class IntegerBinarySearchTree {
 	public void insert(int x) {
 		if (root == null){
 			root = new BinaryTreeNode(x);
-		}else if (this.contains(x)){
+		} /*else if (this.contains(x)){
 			throw new DuplicateItemException("argument already exists in tree");
-		}else {
+		}*/ else {
 			insert(x,root);
-		}
-	}
-	
-	private void insert(int value, BinaryTreeNode currentNode){
-		if(value < currentNode.getValue()){
-			if(currentNode.getLeft() != null){
-				insert(value, currentNode.getLeft());
-			} else {
-				BinaryTreeNode newNode = new BinaryTreeNode(value);
-				currentNode.setLeft(newNode);
-			}
-		} else if (value > currentNode.getValue()){
-			if(currentNode.getRight() != null){
-				insert(value, currentNode.getRight());
-			} else {
-				BinaryTreeNode newNode = new BinaryTreeNode(value);
-				currentNode.setRight(newNode);
-			}
 		}
 	}
 
@@ -61,15 +42,7 @@ public class IntegerBinarySearchTree {
 			return recursiveSmallestValue(root);
 		} throw new ItemNotFoundException("tree must have elements");
 	}
-	
-	private int recursiveSmallestValue(BinaryTreeNode currentNode){
-		if(currentNode.getLeft() == null){
-			return currentNode.getValue();
-		} else {
-			return recursiveSmallestValue(currentNode.getLeft());
-		}
-	}
-	
+
 	/**
 	 * Find the largest item in the tree.
 	 *
@@ -82,14 +55,6 @@ public class IntegerBinarySearchTree {
 			return recursiveLargestValue(root);
 		} throw new ItemNotFoundException("tree must have elements");
 	}
-	
-	private int recursiveLargestValue(BinaryTreeNode currentNode){
-		if(currentNode.getRight() == null){
-			return currentNode.getValue();
-		} else {
-			return recursiveSmallestValue(currentNode.getRight());
-		}
-	}
 
 	/**
 	 * Returns whether or not the value exists in the tree
@@ -97,7 +62,7 @@ public class IntegerBinarySearchTree {
 	 * @return true if the value exists, false otherwise
 	 */
 	public boolean contains(int value) {
-		return Arrays.asList(this.toInOrder()).contains(value);
+		return true;
 	}
 
 	/**
@@ -137,18 +102,6 @@ public class IntegerBinarySearchTree {
 		
 		return valueList.toArray(new Integer[valueList.size()]);
 	}
-	
-	private void recursiveInOrder(ArrayList<Integer> valueList, BinaryTreeNode currentNode){
-		if(currentNode.getLeft() != null){
-			recursiveInOrder(valueList, currentNode.getLeft());
-		}
-		
-		valueList.add(currentNode.getValue());
-		
-		if(currentNode.getRight() != null){
-			recursiveInOrder(valueList, currentNode.getRight());
-		}
-	}
 
 	/**
 	 * Returns an postorder-traversed array
@@ -162,6 +115,43 @@ public class IntegerBinarySearchTree {
 		
 		return valueList.toArray(new Integer[valueList.size()]);
 	}
+
+	/**
+	 * Returns an Breadth First-traversed array
+	 *
+	 * @return an array of Integers, or empty if the tree is empty.
+	 */
+	public Integer[] toBreadthFirstOrder() {
+		throw new UnsupportedOperationException("toBreadthFirstOrder needs to be implemented");
+	}
+
+	private int recursiveSmallestValue(BinaryTreeNode currentNode){
+		if(currentNode.getLeft() == null){
+			return currentNode.getValue();
+		} else {
+			return recursiveSmallestValue(currentNode.getLeft());
+		}
+	}
+
+	private int recursiveLargestValue(BinaryTreeNode currentNode){
+		if(currentNode.getRight() == null){
+			return currentNode.getValue();
+		} else {
+			return recursiveSmallestValue(currentNode.getRight());
+		}
+	}
+	
+	private void recursiveInOrder(ArrayList<Integer> valueList, BinaryTreeNode currentNode){
+		if(currentNode.getLeft() != null){
+			recursiveInOrder(valueList, currentNode.getLeft());
+		}
+		
+		valueList.add(currentNode.getValue());
+		
+		if(currentNode.getRight() != null){
+			recursiveInOrder(valueList, currentNode.getRight());
+		}
+	}
 	
 	private void recursivePostOrder(ArrayList<Integer> valueList, BinaryTreeNode currentNode){
 		if(currentNode.getLeft() != null){
@@ -174,13 +164,22 @@ public class IntegerBinarySearchTree {
 		
 		valueList.add(currentNode.getValue());
 	}
-
-	/**
-	 * Returns an Breadth First-traversed array
-	 *
-	 * @return an array of Integers, or empty if the tree is empty.
-	 */
-	public Integer[] toBreadthFirstOrder() {
-		throw new UnsupportedOperationException("toBreadthFirstOrder needs to be implemented");
+	
+	private void insert(int value, BinaryTreeNode currentNode){
+		if(value < currentNode.getValue()){
+			if(currentNode.getLeft() != null){
+				insert(value, currentNode.getLeft());
+			} else {
+				BinaryTreeNode newNode = new BinaryTreeNode(value);
+				currentNode.setLeft(newNode);
+			}
+		} else if (value > currentNode.getValue()){
+			if(currentNode.getRight() != null){
+				insert(value, currentNode.getRight());
+			} else {
+				BinaryTreeNode newNode = new BinaryTreeNode(value);
+				currentNode.setRight(newNode);
+			}
+		}
 	}
 }

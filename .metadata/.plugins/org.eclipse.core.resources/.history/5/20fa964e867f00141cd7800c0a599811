@@ -24,9 +24,9 @@ public class IntegerBinarySearchTree {
 	public void insert(int x) {
 		if (root == null){
 			root = new BinaryTreeNode(x);
-		}else if (this.contains(x)){
+		} /*else if (this.contains(x)){
 			throw new DuplicateItemException("argument already exists in tree");
-		}else {
+		}*/ else {
 			insert(x,root);
 		}
 	}
@@ -183,4 +183,5 @@ public class IntegerBinarySearchTree {
 	public Integer[] toBreadthFirstOrder() {
 		throw new UnsupportedOperationException("toBreadthFirstOrder needs to be implemented");
 	}
+
 }

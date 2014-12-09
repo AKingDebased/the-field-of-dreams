@@ -1,0 +1,5 @@
+### integer binary search tree
+
+##### what a long strange trip it's been
+
+* and here we are at the final assignment.  before anything else, i just want to note that binary search trees are well established in the world of computer science. as a result, much of what i wrote might seem kind of derivative.  really, what i'm trying to say is i SWEAR i didn't plagiarize, but there are just certain ways these things are always done (e.g. traversing the tree recursively) and i didn't see the point in changing what works at optimum efficiency.
