@@ -2,18 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="hasN" key="selection"/>
+		<item value="if (root" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="hasn"/>
-			<item value="ArrayList"/>
-			<item value="testList"/>
-			<item value="CCList"/>
-			<item value="size"/>
-			<item value="mrtcollection"/>
+			<item value="if (root"/>
+			<item value="EMPTY_"/>
+			<item value="empty_"/>
+			<item value="EMPTY"/>
+			<item value="contains"/>
+			<item value="arrays"/>
+			<item value="contain"/>
+			<item value="insertdupl"/>
 		</list>
 		<list key="replacehistory">
 			<item value="LinkedList"/>
