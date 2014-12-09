@@ -7,5 +7,3 @@
 * the world of law is recursion.  pretty much all of the traversal functions utilize recursion, as the infrastructure of a binary tree is recursive in nature.  we're not reinventing the wheel here, just trying to make it run a little smoother.
 
 * i used java's `Arrays` class to simplify my contains method. that, and also the added simplicity of the arrays my `toInOrder()` method returns.  is that cheating?  i can't rightly say.  does it work?  yes.  is it fast?  hell yes.
-
-* i will admit it right now, i lifted a small kludge fix from my good buddy patrick, so if you spot it, well, i stole it.  you got me.

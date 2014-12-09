@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="IntegerBinarySearchTreeTest.postOrderEmptyTest" project="IntegerBinarySearchTree" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testcase name="postOrderEmptyTest" classname="edu.lmu.cmsi.tree.IntegerBinarySearchTreeTest" time="0.0"/>
+</testrun>

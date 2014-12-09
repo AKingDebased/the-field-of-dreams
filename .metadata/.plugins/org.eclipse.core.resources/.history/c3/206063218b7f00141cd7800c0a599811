@@ -8,7 +8,7 @@ import edu.lmu.cmsi.tree.exception.ItemNotFoundException;
 import edu.lmu.cmsi.tree.node.BinaryTreeNode;
 
 public class IntegerBinarySearchTree {
-	private static Integer[] EMPTY_TREE = {};
+	private static Integer[] EMPTY_ARRAY = {};
 	protected BinaryTreeNode root;
 
 	public IntegerBinarySearchTree() {
@@ -106,13 +106,13 @@ public class IntegerBinarySearchTree {
 	 * @return an array of Integers, or empty if the tree is empty.
 	 */
 	public Integer[] toPreOrder() {
-		if(root == null){
-			return EMPTY_TREE;
-		}
-		
 		ArrayList<Integer> valueList = new ArrayList<Integer>();
 		
 		recursivePreOrder(valueList, root);
+		
+		if(valueList.isEmpty()){
+			return EMPTY_ARRAY;
+		}
 		
 		return valueList.toArray(new Integer[valueList.size()]);
 	}
@@ -135,14 +135,13 @@ public class IntegerBinarySearchTree {
 	 * @return an array of Integers, or empty if the tree is empty.
 	 */
 	public Integer[] toInOrder() {
-		if(root == null){
-			return EMPTY_TREE;
-		}
-		
 		ArrayList<Integer> valueList = new ArrayList<Integer>();
 		
 		recursiveInOrder(valueList, root);
 		
+		if(valueList.isEmpty()){
+			return EMPTY_ARRAY;
+		}
 		
 		return valueList.toArray(new Integer[valueList.size()]);
 	}
@@ -165,13 +164,13 @@ public class IntegerBinarySearchTree {
 	 * @return an array of Integers, or empty if the tree is empty.
 	 */
 	public Integer[] toPostOrder() {
-		if(root == null){
-			return EMPTY_TREE;
-		}
-		
 		ArrayList<Integer> valueList = new ArrayList<Integer>();
 		
 		recursivePostOrder(valueList, root);
+		
+		if(valueList.isEmpty()){
+			return EMPTY_ARRAY;
+		}
 		
 		return valueList.toArray(new Integer[valueList.size()]);
 	}
