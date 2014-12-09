@@ -60,6 +60,9 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="edu.lmu.cmsi.gabriel.IntegerBinarySearchTree"/>
+			<item value="edu.lmu.cmsi.gabriel.BinarySearchTree"/>
+			<item value="edu.lmu.cmsi.gabriel.binarysearchtree"/>
 			<item value="edu.lmu.cmsi.gabriel.recursionandstacks"/>
 			<item value="edu.lmu.cmsi.gabriel.recursionandthestack"/>
 			<item value="edu.lmu.cmsi.gabriel.customcollection"/>
@@ -69,6 +72,9 @@
 			<item value="edu.lmu.cmsi.gabriel"/>
 		</list>
 		<list key="artifactId">
+			<item value="IntegerBinarySearchTree"/>
+			<item value="BinarySearchTree"/>
+			<item value="binarysearchtree"/>
 			<item value="recursionandstacks"/>
 			<item value="recursionandthestack"/>
 			<item value="customcollection"/>
