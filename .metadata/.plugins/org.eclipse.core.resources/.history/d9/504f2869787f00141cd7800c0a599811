@@ -1,7 +1,5 @@
 package edu.lmu.cmsi.tree;
 
-import java.util.ArrayList;
-
 import edu.lmu.cmsi.tree.exception.DuplicateItemException;
 import edu.lmu.cmsi.tree.exception.ItemNotFoundException;
 import edu.lmu.cmsi.tree.node.BinaryTreeNode;
@@ -60,7 +58,7 @@ public class IntegerBinarySearchTree {
 	 * @return true if the value exists, false otherwise
 	 */
 	public boolean contains(int value) {
-		return true;
+
 	}
 
 	/**
@@ -69,13 +67,9 @@ public class IntegerBinarySearchTree {
 	 * @return an array of Integers, or empty if the tree is empty.
 	 */
 	public Integer[] toPreOrder() {
-		ArrayList<Integer> valueList = new ArrayList<Integer>();
-		
-		recursivePreOrder(valueList, root);
-		
-		return valueList.toArray(new Integer[valueList.size()]);
+
 	}
-	
+
 	/**
 	 * Returns an inorder-traversed array
 	 *
@@ -116,18 +110,6 @@ public class IntegerBinarySearchTree {
 			return currentNode.getValue();
 		} else {
 			return recursiveSmallestValue(currentNode.getRight());
-		}
-	}
-	
-	private void recursivePreOrder(ArrayList<Integer> valueList, BinaryTreeNode currentNode){
-		valueList.add(currentNode.getValue());
-		
-		if(currentNode.getLeft() != null){
-			recursivePreOrder(valueList, currentNode.getLeft());
-		}
-		
-		if(currentNode.getRight() != null){
-			recursivePreOrder(valueList, currentNode.getRight());
 		}
 	}
 }

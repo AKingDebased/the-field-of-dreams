@@ -60,7 +60,7 @@ public class IntegerBinarySearchTree {
 	 * @return true if the value exists, false otherwise
 	 */
 	public boolean contains(int value) {
-		return true;
+
 	}
 
 	/**
@@ -119,7 +119,7 @@ public class IntegerBinarySearchTree {
 		}
 	}
 	
-	private void recursivePreOrder(ArrayList<Integer> valueList, BinaryTreeNode currentNode){
+	private void recursivePreOrder(ArrayList valueList, BinaryTreeNode currentNode){
 		valueList.add(currentNode.getValue());
 		
 		if(currentNode.getLeft() != null){

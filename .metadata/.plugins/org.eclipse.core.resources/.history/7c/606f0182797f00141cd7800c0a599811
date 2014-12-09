@@ -60,7 +60,7 @@ public class IntegerBinarySearchTree {
 	 * @return true if the value exists, false otherwise
 	 */
 	public boolean contains(int value) {
-		return true;
+
 	}
 
 	/**
@@ -76,6 +76,14 @@ public class IntegerBinarySearchTree {
 		return valueList.toArray(new Integer[valueList.size()]);
 	}
 	
+	private void recursivePreOrder(ArrayList valueList, BinaryTreeNode currentNode){
+		valueList.add(currentNode.getValue());
+		
+		
+			
+		
+	}
+
 	/**
 	 * Returns an inorder-traversed array
 	 *
@@ -116,18 +124,6 @@ public class IntegerBinarySearchTree {
 			return currentNode.getValue();
 		} else {
 			return recursiveSmallestValue(currentNode.getRight());
-		}
-	}
-	
-	private void recursivePreOrder(ArrayList<Integer> valueList, BinaryTreeNode currentNode){
-		valueList.add(currentNode.getValue());
-		
-		if(currentNode.getLeft() != null){
-			recursivePreOrder(valueList, currentNode.getLeft());
-		}
-		
-		if(currentNode.getRight() != null){
-			recursivePreOrder(valueList, currentNode.getRight());
 		}
 	}
 }
