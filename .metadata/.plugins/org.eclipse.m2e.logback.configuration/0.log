@@ -3174,3 +3174,29 @@ org.apache.maven.archetype.old.ArchetypeTemplateProcessingException: Directory I
 2014-12-08 21:20:19,631 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/IntegerBinarySearchTree/src/main/resources
 2014-12-08 21:20:19,632 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2014-12-08 21:20:19,632 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/gitHub/the-field-of-dreams/IntegerBinarySearchTree/src/test/resources
+2014-12-09 10:02:10,783 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.lmu.cmsi.tree:IntegerBinarySearchTree:0.0.1-SNAPSHOT @ /Users/gabrielgonzalvez/Documents/cmsi 281/the-field-of-dreams/IntegerBinarySearchTree/pom.xml.
+2014-12-09 10:02:14,146 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-12-09 10:02:14,146 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/the-field-of-dreams/IntegerBinarySearchTree/src/main/resources
+2014-12-09 10:02:14,148 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-12-09 10:02:14,149 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/the-field-of-dreams/IntegerBinarySearchTree/src/test/resources
+2014-12-09 10:02:15,235 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-12-09 10:02:15,235 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/the-field-of-dreams/IntegerBinarySearchTree/src/main/resources
+2014-12-09 10:02:15,237 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-12-09 10:02:15,238 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/the-field-of-dreams/IntegerBinarySearchTree/src/test/resources
+2014-12-09 10:02:16,628 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.lmu.cmsi.gabriel:recursionandstacks:0.0.1-SNAPSHOT @ /Users/gabrielgonzalvez/Documents/cmsi 281/the-field-of-dreams/RecursionAndStacks/pom.xml.
+2014-12-09 10:02:16,805 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-12-09 10:02:16,806 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/the-field-of-dreams/RecursionAndStacks/src/main/resources
+2014-12-09 10:02:16,808 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-12-09 10:02:16,809 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/the-field-of-dreams/RecursionAndStacks/src/test/resources
+2014-12-09 10:03:18,872 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-12-09 10:03:18,894 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/the-field-of-dreams/IntegerBinarySearchTree/src/main/resources
+2014-12-09 10:03:18,897 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-12-09 10:03:18,898 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/the-field-of-dreams/IntegerBinarySearchTree/src/test/resources
+2014-12-09 10:05:12,259 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-12-09 10:05:12,278 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/the-field-of-dreams/IntegerBinarySearchTree/src/main/resources
+2014-12-09 10:05:12,280 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-12-09 10:05:12,281 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/the-field-of-dreams/IntegerBinarySearchTree/src/test/resources
+2014-12-09 10:05:44,684 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-12-09 10:05:44,706 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/the-field-of-dreams/IntegerBinarySearchTree/src/main/resources
+2014-12-09 10:05:44,708 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2014-12-09 10:05:44,709 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/gabrielgonzalvez/Documents/cmsi 281/the-field-of-dreams/IntegerBinarySearchTree/src/test/resources

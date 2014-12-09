@@ -195,10 +195,10 @@ public class IntegerBinarySearchTree {
 		 if (root == null) return EMPTY_TREE;
 		 
 		 ArrayList<Integer> valueList = new ArrayList<Integer>();
-		 BinaryTreeNode node = root;
+		 BinaryTreeNode node = new BinaryTreeNode(0);
 		 Queue<BinaryTreeNode> breadthQueue = new ArrayDeque<BinaryTreeNode>();
 		 
-		 breadthQueue.add(node);
+		 breadthQueue.add(root);
 		 
 		 while(breadthQueue.size() > 0)
 		{
